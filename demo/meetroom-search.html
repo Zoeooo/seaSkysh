@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>meetroom-search</title>
+
+		<style type="text/css">
+			* {
+				font-family: 微软雅黑, Arial;
+				padding: 0;
+				margin: 0;
+				font-size: 16px;
+			}
+			.biaoge {
+				font-family: 微软雅黑, Arial;
+				padding: 0;
+				margin: 0;
+				font-size: 16px;
+			}
+			.biaoti {
+				font-family: 微软雅黑, Arial;
+				padding: 0;
+				margin: 0;
+				font-size: 17px;
+			}
+			.cx {
+				font-family: 微软雅黑, Arial;
+				padding: 0;
+				margin: 0;
+				font-size: 16px;
+			}
+			.bumen {
+				font-family: 微软雅黑, Arial;
+				padding: 0;
+				margin: 0;
+				font-size: 13px;
+				width: 100px
+			}
+			.yhm {
+				font-family: 微软雅黑, Arial;
+				padding: 0;
+				margin: 0;
+				font-size: 13px;
+			}
+		</style>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+	</head>
+
+	<body style="background-color: #f5f5f5;">
+		<center>
+			<strong>会议室查询</strong>
+		</center>
+		<br />
+		<form class="form-inline">
+			<center>
+				会议室名称：
+				<div class="form-group">
+					<input class="form-control" type="text" name="busroom_title" id="title" style="text-align:center">
+				</div>
+				<label class="col-md-1"></label>容纳人数：
+				<div class="form-group">
+					<input class="form-control" type="text" name="busroom_peop" id="peop" style="text-align:center">
+				</div>
+				<label class="col-md-1"></label>
+				<span style="cursor: pointer;" class="glyphicon glyphicon-search" aria-hidden="true"></span>
+			</center>
+			<br/>
+
+		</form>
+
+		<form action="" name="idFrmMain" method="post">
+			<center>
+				<table width="800px" border="0" cellspacing="0" cellpadding="0" id="changecolor" align="center">
+					<tr bgcolor="lightblue" align="center" class="biaoti" height="36">
+						<td>会议室名称</td>
+						<td>可容纳人数</td>
+						<td>负责人</td>
+						<td>状态</td>
+						<td>编辑</td>
+						<td>删除</td>
+					</tr>
+
+					<tr bgcolor="azure" align="center" class="biaoge" height="36">
+						<td>第一会议室</td>
+						<td>30</td>
+						<td>齐国强</td>
+						<td>空闲中</td>
+						<td>
+							<a href="meetroom-edit.html">
+								<span style="cursor: pointer;" class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+							</a>
+						</td>
+						<td>
+							<a href="">
+								<span style="cursor: pointer;" class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+							</a>
+						</td>
+					</tr>
+					<tr bgcolor="azure" align="center" class="biaoge" height="36">
+						<td>第一会议室</td>
+						<td>30</td>
+						<td>齐国强</td>
+						<td>空闲中</td>
+						<td>
+							<a href="meetroom-edit.html">
+								<span style="cursor: pointer;" class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+							</a>
+						</td>
+						<td>
+							<a href="">
+								<span style="cursor: pointer;" class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+							</a>
+						</td>
+					</tr>
+					<tr bgcolor="azure" align="center" class="biaoge" height="36">
+						<td>第一会议室</td>
+						<td>30</td>
+						<td>齐国强</td>
+						<td>空闲中</td>
+						<td>
+							<a href="meetroom-edit.html">
+								<span style="cursor: pointer;" class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+							</a>
+						</td>
+						<td>
+							<a href="">
+								<span style="cursor: pointer;" class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+							</a>
+						</td>
+					</tr>
+					<tr bgcolor="azure" align="center" class="biaoge" height="36">
+						<td>第一会议室</td>
+						<td>30</td>
+						<td>齐国强</td>
+						<td>空闲中</td>
+						<td>
+							<a href="meetroom-edit.html">
+								<span style="cursor: pointer;" class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+							</a>
+						</td>
+						<td>
+							<a href="">
+								<span style="cursor: pointer;" class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+							</a>
+						</td>
+					</tr>
+					<tr bgcolor="azure" align="center" class="biaoge" height="36">
+						<td>第一会议室</td>
+						<td>30</td>
+						<td>齐国强</td>
+						<td>空闲中</td>
+						<td>
+							<a href="meetroom-edit.html">
+								<span style="cursor: pointer;" class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+							</a>
+						</td>
+						<td>
+							<a href="">
+								<span style="cursor: pointer;" class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+							</a>
+						</td>
+					</tr>
+					<tr bgcolor="azure" align="center" class="biaoge" height="36">
+						<td>第一会议室</td>
+						<td>30</td>
+						<td>齐国强</td>
+						<td>空闲中</td>
+						<td>
+							<a href="meetroom-edit.html">
+								<span style="cursor: pointer;" class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+							</a>
+						</td>
+						<td>
+							<a href="">
+								<span style="cursor: pointer;" class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+							</a>
+						</td>
+					</tr>
+					<tr bgcolor="azure" align="center" class="biaoge" height="36">
+						<td>第一会议室</td>
+						<td>30</td>
+						<td>齐国强</td>
+						<td>空闲中</td>
+						<td>
+							<a href="meetroom-edit.html">
+								<span style="cursor: pointer;" class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+							</a>
+						</td>
+						<td>
+							<a href="">
+								<span style="cursor: pointer;" class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+							</a>
+						</td>
+					</tr>
+				</table>
+			</center>
+		</form>
+		<center>
+			<div class="navbar-fixed-bottom">
+				<nav>
+					<ul class="pagination">
+						<li>
+							<a href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+						<li><a href="#">1</a>
+						</li>
+						<li><a href="#">2</a>
+						</li>
+						<li><a href="#">3</a>
+						</li>
+						<li><a href="#">4</a>
+						</li>
+						<li><a href="#">5</a>
+						</li>
+						<li>
+							<a href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</center>
+		<script language="javascript">		
+			function senfe(o, a, b, c, d) {
+					var t = document.getElementById(o).getElementsByTagName("tr");
+					for (var i = 0; i < t.length; i++) {
+						t[i].style.backgroundColor = (t[i].sectionRowIndex % 2 == 0) ? a : b;
+						t[i].onmouseover = l;
+						function l() {
+								this.style.backgroundColor = c;
+							}
+							//this 代表当前方法中的对象即 t[i]，this.x 指的是它的x的属性,this.x != "1"指的是当它的x的属性值不为"1"的时候
+						t[i].onmouseout = function() {
+                            this.style.backgroundColor = (this.sectionRowIndex % 2 == 0) ? a : b;
+                        }
+						t[i].onclick = function() {
+							this.style.backgroundColor = d;
+						}
+					}
+				}
+		</script>
+		<script language="javascript">
+			 //senfe("表格名称","奇数行背景","偶数行背景","鼠标经过背景","点击后颜色");
+			senfe("changecolor", "", "", "threedlightshadow", "infobackground");
+		</script>
+	</body>
+
+</html>

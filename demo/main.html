@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>主界面</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <style type="text/css">
+        body {
+            padding-top: 70px;
+        }
+
+        .navbar-brand {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .listitem .listitem-head {
+            float: left;
+            padding-bottom: 20px;
+        }
+
+        .listitem img {
+            width: 64px;
+            height: 64px;
+        }
+
+        .listitem .listitem-body {
+            float: left;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .listitem .listitem-body .listitem-body-title {
+            font-weight: bold;
+        }
+
+        .listitem a {
+            color: #85c5f3;
+            text-decoration: none;
+        }
+
+        .listitem a:hover {
+            color: #ff6a00;
+        }
+
+        .nav-height {
+            height: 20px;
+        }
+
+        .nav > li:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body style="background-color: threedlightshadow;">
+<!-- 顶部导航栏开始 -->
+<nav class="navbar navbar-inverse navbar-fixed-top  nav-height">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand">
+                <span class="container ">海天信息</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="nav navbar-nav">
+                <li><a href='javascript:history.go(0)'>首页</a></li>
+                <li><a href='javascript:history.go(1)'>前进</a></li>
+                <li><a href='javascript:history.go(-1)'>后退</a></li>
+                <li><a href="login.html">退出登录</a></li>
+
+            </ul>
+            <div class="navbar-right">
+                <a class="navbar-brand" href="#">
+                    <span class="container " style="font-size: 10px;line-height:10px;">当前用户：管理员 &nbsp;&nbsp;&nbsp;&nbsp;[用户身份：管理员]</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- 顶部导航栏结束 -->
+
+<div class="container">
+    <!-- 左侧可伸缩菜单栏开始 -->
+    <div class="col-md-2">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#panel1">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true">用户管理</span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="panel1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <div class="list-group" style="margin:0">
+                            <a class="list-group-item text-center" href="user-search.html" target="main">查询用户</a>
+                            <a class="list-group-item text-center" href="user-add.html" target="main">新增用户</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#panel2">
+                                <span class="glyphicon glyphicon-leaf" aria-hidden="true">会议管理</span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="panel2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="list-group" style="margin:0">
+                            <a class="list-group-item text-center" href="meet-search.html" target="main">查询会议</a>
+                            <a class="list-group-item text-center" href="meet-add.html" target="main">申请会议</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#panel3">
+                              <span class="glyphicon glyphicon-th-large" aria-hidden="true">设备管理</span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="panel3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="list-group" style="margin:0">
+                            <a class="list-group-item text-center" href="device-searc.html" target="main">查询设备</a>
+                            <a class="list-group-item text-center" href="device-add.html" target="main">申请设备</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#panel4">
+                               <span class="glyphicon glyphicon-home" aria-hidden="true">会议室管理</span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="panel4" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="list-group" style="margin:0">
+                            <a class="list-group-item text-center" href="meetroom-search.html" target="main">查询会议室</a>
+                            <a class="list-group-item text-center" href="meetroom-add.html" target="main">申请会议室</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 左侧可伸缩菜单栏结束 -->
+
+    <!-- 页面主内容开始 -->
+    <div class="col-md-10 container well" style="height: 560px;">
+        <iframe name="main" src="meet-search.html" scrolling="no" frameborder="0" height="100%" width="100%"></iframe>
+    </div>
+
+    <!-- 页面主内容开始 -->
+</div>
+
+<!-- 页尾开始 -->
+<script src="scripts/jquery-1.11.0.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

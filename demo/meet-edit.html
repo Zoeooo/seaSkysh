@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>meet-edit</title>
+		<meta charset="UTF-8">
+		<style>
+			* {
+				font-family:"Microsoft YaHei",sans-serif;
+				padding: 0;
+				margin: 0;
+				font-size: 16px;
+			}
+		</style>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+	</head>
+
+	<body style="background-color: #f5f5f5;">
+
+			<strong>丨 修改会议</strong>
+
+		<br />
+		<center>
+			<div align="center" style="margin: 5% 0 0 0">
+				<form class="form-horizontal">
+                    <table class="table-condensed" width="380px" height="175" border="0" cellspacing="0" cellpadding="0" id="changecolor" align="center">
+                        <tr align="center">
+                            <td width="100">用户名称</td>
+                            <td width="180">
+                                <input class="form-control" type="text" value="A" name="user_name" id="name" />
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td>用户密码</td>
+                            <td>
+                                <input class="form-control" type="password" value="******" name="user_pwd1" id="pwd1" />
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td>确认密码</td>
+                            <td>
+                                <input class="form-control" type="password" value="******" name="user_pwd2" id="pwd2" />
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td>所属单位</td>
+                            <td>
+                                <select class="form-control" name="user_addr" value=" ×××××××××" id="addr">
+                                    <option value="" selected="selected"> ×××××××××</option>
+                                    <option value="	×××××××××">	×××××××××</option>
+                                    <option value="	×××××××××">	×××××××××</option>
+                                    <option value="	×××××××××">	×××××××××</option>
+                                    <option value="	×××××××××">	×××××××××</option>
+                                    <option value="	×××××××××">	×××××××××</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td>用户身份</td>
+                            <td>
+                                <select class="form-control" name="user_role" id="role">
+                                    <option value="" selected="selected">管理员</option>
+                                    <option value="管理员">管理员</option>
+                                    <option value="结算中心领导">结算中心领导</option>
+                                    <option value="稽核员">稽核员</option>
+                                    <option value="会计">会计</option>
+                                    <option value="出纳">出纳</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+				</form>
+			</div>
+		</center>
+		<br/>
+		<center>
+			<button type="button" class="btn btn-default btn-sm " data-dismiss="modal">确定</button>
+			<label class="control-label col-md-1"></label>
+			<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">取消</button>
+		</center>
+		<script language="javascript">
+			function senfe(o, a, b, c, d) {
+					var t = document.getElementById(o).getElementsByTagName("td");
+					for (var i = 0; i < t.length; i++) {
+						t[i].style.backgroundColor = (t[i].sectionRowIndex % 2 == 0) ? a : b;
+						t[i].onmouseover = l;
+
+						function l() {
+								this.style.backgroundColor = c;
+							}
+							//this 代表当前方法中的对象即 t[i]，this.x 指的是它的x的属性,this.x != "1"指的是当它的x的属性值不为"1"的时候
+						t[i].onmouseout = function() {
+							this.style.backgroundColor = (this.sectionRowIndex % 2 == 0) ? a : b;
+						}
+						t[i].onclick = function() {
+							this.style.backgroundColor = d;
+						}
+					}
+				}
+		</script>
+		<script language="javascript">
+			 //senfe("表格名称","奇数行背景","偶数行背景","鼠标经过背景","点击后颜色");
+			senfe("changecolor", "", "", "threedlightshadow", "threedlightshadow");
+		</script>
+	</body>
+
+</html>

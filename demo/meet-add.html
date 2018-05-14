@@ -1,0 +1,139 @@
+<!DOCTYPE html >
+<html>
+
+	<head>
+		<title>meet-add</title>
+		<style>
+			*{
+		font-family:微软雅黑, Arial;
+		    padding: 0;
+		    margin: 0;
+		    font-size:16px;
+		}
+		</style>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<script language="javascript" type="text/javascript" src="Calendar.js" charset="gb2312"></script>
+	</head>
+
+	<body style="background-color: #f5f5f5;">
+
+		<center><strong>会议申请</strong>
+		</center>
+		<br/>
+		<div align="center">
+			<form class="form-horizontal">
+				<table border="0" cellpadding="0" cellspacing="0" class="table-condensed" width="380px" height="315px" id="changecolor" align="center">
+
+					<tr align="center">
+						<td width="100">会议主题</td>
+						<td width="180">
+							<input class="form-control" type="text" name="mt_title" id="title"  />
+						</td>
+					</tr>
+
+					<tr align="center">
+						<td>会议人数</td>
+						<td>
+							<input class="form-control" type="text" name="mt_number" id="number" cols="20" rows="1" />
+						</td>
+					</tr>
+
+					<tr align="center">
+						<td>会议级别</td>
+						<td>
+							<select class="form-control" name="mt_lv" id="lv">
+								<option value="">请选择会议级别</option>
+								<option value="高">高</option>
+								<option value="中">中</option>
+								<option value="低">低</option>
+							</select>
+						</td>
+					</tr>
+					<tr align="center">
+						<td>开始日期</td>
+						<td>
+							<input class="form-control" type="text" name="mt_sstime" id="sstime" cols="5" rows="1" onclick="new Calendar().show(this);" />
+						</td>
+					</tr>
+
+					<tr align="center">
+						<td>结束日期</td>
+						<td>
+							<input class="form-control" type="text" name="mt_ootime" id="ootime" cols="5" rows="1" onclick="new Calendar().show(this);" />
+						</td>
+					</tr>
+
+					<tr align="center">
+						<td>会议室</td>
+						<td>
+							<input class="form-control" type="text" name="mt_room" id="room" cols="5" rows="1" />
+						</td>
+					</tr>
+
+					<tr align="center">
+						<td>会议所需其他设备</td>
+						<td>
+							<input class="form-control" type="text" name="mt_device" id="device" cols="5" rows="1" />
+						</td>
+					</tr>
+
+					<tr align="center">
+						<td>会议主要参加人员</td>
+						<td>
+							<input class="form-control" type="text" name="mt_main" id="main" cols="5" rows="1" />
+						</td>
+					</tr>
+
+					<tr align="center">
+						<td>会议内容</td>
+						<td>
+							<input class="form-control" type="text" name="mt_text" id="text" cols="5" rows="1" />
+							</textarea>
+						</td>
+					</tr>
+
+				</table>
+			</form>
+		</div>
+		<br/>
+		<center>
+			<button type="button" class="btn btn-default btn-sm " data-dismiss="modal">确定</button>
+			<label class="control-label col-md-1"></label>
+			<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">取消</button>
+		</center>
+
+		<script language="javascript">
+			function senfe(o,a,b,c,d){
+			 var t=document.getElementById(o).getElementsByTagName("td");
+			
+			 for(var i=0;i<t.length;i++){
+			  t[i].style.backgroundColor=(t[i].sectionRowIndex%2==0)?a:b;
+			  
+			  t[i].onmouseover=l;
+			  
+			  function l()
+			  {
+			   this.style.backgroundColor=c;
+			  }
+			  //this 代表当前方法中的对象即 t[i]，this.x 指的是它的x的属性,this.x != "1"指的是当它的x的属性值不为"1"的时候
+			  t[i].onmouseout=function(){
+			   this.style.backgroundColor=(this.sectionRowIndex%2==0)?a:b;
+			  }
+			  
+			   t[i].onclick=function()
+			  {
+			   this.style.backgroundColor=d;
+			  }
+			  
+			  
+			 }
+			}
+		</script>
+		<script language="javascript">
+			//senfe("表格名称","奇数行背景","偶数行背景","鼠标经过背景","点击后颜色");
+			senfe("changecolor","","","threedlightshadow","threedlightshadow");
+		</script>
+
+	</body>
+
+</html>
