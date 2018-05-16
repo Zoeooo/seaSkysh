@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>管理员首页</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+
+<div id="wrapper">
+    <nav class="navbar navbar-default top-navbar" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="admini.html">海天信息</a>
+            <div style="width: 200px;margin: 0 0 0 260px;padding: 30px 0 0 0">
+                <small style="color:#fff;">欢迎您，John(管理员)！</small>
+            </div>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                    <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="#"><i class="fa fa-user fa-fw"></i> 用户信息</a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> 设置</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> 退出系统</a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-user -->
+            </li>
+        </ul>
+    </nav>
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li>
+                    <a href="administrator/userList.html"><i class="fa fa-sitemap"></i> 用户管理<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="administrator/userList.html"> 用户列表</a>
+                        </li>
+                        <li>
+                            <a href="administrator/userIdent.html"> 用户角色</a>
+                        </li>
+                        <li>
+                            <a href="administrator/userManage.html"> 用户设置</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="administrator/subManage.html"><i class="fa fa-desktop"></i> 科目管理</a>
+                </li>
+                <li>
+                    <a href="administrator/indexManage.html"><i class="fa fa-bar-chart-o"></i> 指标管理</a>
+                </li>
+                <li>
+                    <a href="administrator/analysisList.html"><i class="fa fa-bar-chart-o"></i> 经济分类执行分析</a>
+                </li>
+                <li>
+                    <a href="administrator/logList.html"><i class="fa fa-qrcode"></i> 查看日志</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <div id="page-wrapper">
+        <div id="page-inner">
+            <div class="container-fluid">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="panel-group" id="accordion">
+                            <div style="text-align: center">
+                                <P>管理员欢迎页</P>
+                                <center><div style="width: 700px;height: 400px;background-color: #dedede"></div></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/jquery-1.10.2.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.metisMenu.js"></script>
+<script src="assets/js/morris/raphael-2.1.0.min.js"></script>
+<script src="assets/js/morris/morris.js"></script>
+<script src="assets/js/dataTables/jquery.dataTables.js"></script>
+<script src="assets/js/dataTables/dataTables.bootstrap.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#dataTables-example').dataTable();
+    });
+</script>
+<script src="assets/js/custom-scripts.js"></script>
+
+</body>
+
+</html>
