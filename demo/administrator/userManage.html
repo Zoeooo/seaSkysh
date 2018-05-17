@@ -15,7 +15,6 @@
 <body>
 
 <div id="wrapper">
-    <!--顶部导航-->
     <nav class="navbar navbar-default top-navbar" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
@@ -49,7 +48,6 @@
             <!-- /.dropdown -->
         </ul>
     </nav>
-    <!--左边导航-->
     <nav class="navbar-default navbar-side" role="navigation">
         <div class="sidebar-collapse">
             <ul class="nav" id="main-menu">
@@ -93,9 +91,434 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
+                    <!-- Advanced Tables -->
                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                            用户列表
+                            <a href="addUser.html" class="btn btn-primary" style="margin: 0 15px 0 15px">添加</a>
+                            <a href="#" class="btn btn-primary" style="margin: 0 15px 0 0">编辑</a>
+                            <a id="del" onmousedown="del()"  class="btn btn-danger" style="margin: 0 15px 0 0">删除</a>
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                    <tr>
+                                        <th>选择</th>
+                                        <th>用户名称</th>
+                                        <th>用户身份</th>
+                                        <th>用户类型</th>
+                                        <th>所属单位</th>
 
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr id="exp" class="odd gradeX">
+                                        <td><input type="checkbox"></td>
+                                        <td>John</td>
+                                        <td>系统管理员</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="even gradeC">
+                                        <td><input type="checkbox"></td>
+                                        <td>Zoe</td>
+                                        <td>系统管理员</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="odd gradeA">
+                                        <td><input type="checkbox"></td>
+                                        <td>Lisa</td>
+                                        <td>系统管理员</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="even gradeA">
+                                        <td><input type="checkbox"></td>
+                                        <td>Amy</td>
+                                        <td>系统管理员</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="odd gradeA">
+                                        <td><input type="checkbox"></td>
+                                        <td>Richard</td>
+                                        <td>稽核员</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="even gradeA">
+                                        <td><input type="checkbox"></td>
+                                        <td>Lily</td>
+                                        <td>稽核员</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td><input type="checkbox"></td>
+                                        <td>Wrape</td>
+                                        <td>会计</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td><input type="checkbox"></td>
+                                        <td>Jacob</td>
+                                        <td>出纳</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td><input type="checkbox"></td>
+                                        <td>Mark</td>
+                                        <td>出纳</td>
+                                        <td class="center">自定义</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td><input type="checkbox"></td>
+                                        <td>Larry</td>
+                                        <td>出纳</td>
+                                        <td class="center">自定义</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td><input type="checkbox"></td>
+                                        <td>Lolita</td>
+                                        <td>会计</td>
+                                        <td class="center">自定义</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td><input type="checkbox"></td>
+                                        <td>Rihanna</td>
+                                        <td>会计</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td><input type="checkbox"></td>
+                                        <td>Vivian</td>
+                                        <td>领导</td>
+                                        <td class="center">自定义</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td><input type="checkbox"></td>
+                                        <td>Black</td>
+                                        <td>出纳</td>
+                                        <td class="center">自定义</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td><input type="checkbox"></td>
+                                        <td>Anne</td>
+                                        <td>稽核员</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td><input type="checkbox"></td>
+                                        <td>Chloe</td>
+                                        <td>出纳</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td><input type="checkbox"></td>
+                                        <td>Lulu</td>
+                                        <td>稽核员</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td><input type="checkbox"></td>
+                                        <td>Jinx</td>
+                                        <td>稽核员</td>
+                                        <td class="center">自定义</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td><input type="checkbox"></td>
+                                        <td>Vienna</td>
+                                        <td>稽核员</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td><input type="checkbox"></td>
+                                        <td>Sophia</td>
+                                        <td>出纳</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>22</td>
+                                        <td>Leona</td>
+                                        <td>稽核员</td>
+                                        <td class="center">自定义</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>22</td>
+                                        <td>Morgana</td>
+                                        <td>稽核员</td>
+                                        <td class="center">自定义</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>23</td>
+                                        <td>Kalista </td>
+                                        <td>会计</td>
+                                        <td class="center">自定义</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>24</td>
+                                        <td>Anivia</td>
+                                        <td>出纳</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>25</td>
+                                        <td>ashe</td>
+                                        <td>出纳</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>26</td>
+                                        <td>Tristana</td>
+                                        <td>出纳</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>27</td>
+                                        <td>Timor</td>
+                                        <td>出纳</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>28</td>
+                                        <td>Bob</td>
+                                        <td>出纳</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>29</td>
+                                        <td>Caitlyn</td>
+                                        <td>稽核员</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>30</td>
+                                        <td>Garen</td>
+                                        <td>会计</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>31</td>
+                                        <td>Malphite</td>
+                                        <td>稽核员</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>32</td>
+                                        <td>Soraka</td>
+                                        <td>会计</td>
+                                        <td class="center">自定义</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>33</td>
+                                        <td>Sona</td>
+                                        <td>出纳</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>34</td>
+                                        <td>Ghana</td>
+                                        <td>出纳</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>35</td>
+                                        <td>Diana</td>
+                                        <td>稽核员</td>
+                                        <td class="center">自定义</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>36</td>
+                                        <td>LeBlanc</td>
+                                        <td>出纳</td>
+                                        <td class="center">自定义</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>37</td>
+                                        <td>Draven</td>
+                                        <td>出纳</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>38</td>
+                                        <td>Darius</td>
+                                        <td>会计</td>
+                                        <td class="center">自定义</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>39</td>
+                                        <td>Kha'Zix</td>
+                                        <td>稽核员</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>40</td>
+                                        <td>Yasuo</td>
+                                        <td>出纳</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>41</td>
+                                        <td>Zed</td>
+                                        <td>稽核员</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>42</td>
+                                        <td>Talon</td>
+                                        <td>会计</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>43</td>
+                                        <td>Irelia</td>
+                                        <td>出纳</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+
+                                    </tr>
+                                    <tr class="gradeC">
+                                        <td>44</td>
+                                        <td>Riven</td>
+                                        <td>会计</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>45</td>
+                                        <td>Ezreal </td>
+                                        <td>出纳</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>46</td>
+                                        <td>Fiora</td>
+                                        <td>出纳</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeX">
+                                        <td>47</td>
+                                        <td>Luxanna</td>
+                                        <td>出纳</td>
+                                        <td class="center">自定义</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeC">
+                                        <td>48</td>
+                                        <td>Rossye</td>
+                                        <td>会计</td>
+                                        <td class="center">自定义</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeC">
+                                        <td>49</td>
+                                        <td>Hecarim</td>
+                                        <td>稽核员</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>50</td>
+                                        <td>Syndra</td>
+                                        <td>出纳</td>
+                                        <td class="center">自定义</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>51</td>
+                                        <td>Ahri</td>
+                                        <td>领导</td>
+                                        <td class="center">自定义</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeX">
+                                        <td>52</td>
+                                        <td>Kimsila</td>
+                                        <td>稽核员</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeX">
+                                        <td>53</td>
+                                        <td>Ryze</td>
+                                        <td>出纳</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeX">
+                                        <td>54</td>
+                                        <td>Nidalee</td>
+                                        <td>出纳</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeC">
+                                        <td>55</td>
+                                        <td>Jarvan</td>
+                                        <td>稽核员</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeC">
+                                        <td>56</td>
+                                        <td>Katarina</td>
+                                        <td>稽核员</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    <tr class="gradeU">
+                                        <td>57</td>
+                                        <td>Sivir</td>
+                                        <td>出纳</td>
+                                        <td class="center">系统</td>
+                                        <td class="center">×××××××××××</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
+                    <!--End Advanced Tables -->
                 </div>
             </div>
         </div>
@@ -116,6 +539,11 @@
     });
 </script>
 <script src="../assets/js/custom-scripts.js"></script>
+<script>
+    function del() {
+        $("#exp").hide(300);
+    }
+</script>
 
 </body>
 

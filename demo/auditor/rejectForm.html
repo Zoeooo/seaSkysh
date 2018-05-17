@@ -3,13 +3,11 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>分析详情</title>
+    <title>申请详情</title>
     <!-- Bootstrap Styles-->
     <link href="../assets/css/bootstrap.css" rel="stylesheet"/>
     <!-- FontAwesome Styles-->
     <link href="../assets/css/font-awesome.css" rel="stylesheet"/>
-    <!-- Morris Chart Styles-->
-    <link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet"/>
     <!-- Custom Styles-->
     <link href="../assets/css/custom-styles.css" rel="stylesheet"/>
     <!-- Google Fonts-->
@@ -26,7 +24,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../auditor.html">海天信息</a>
+            <a class="navbar-brand" href="../index.html">海天信息</a>
             <div style="width: 200px;margin: 0 0 0 260px;padding: 30px 0 0 0">
                 <small style="color:#fff;">欢迎您，Richard(稽核员)！</small>
                 <!--欢迎您，{{name}}}+"("+{{ident}}+")"+"！"-->
@@ -108,10 +106,10 @@
         <div class="sidebar-collapse">
             <ul class="nav" id="main-menu">
                 <li>
-                    <a href="reviewList.html"><i class="fa fa-desktop"></i> 申请审核</a>
+                    <a class="active-menu" href="reviewList.html"><i class="fa fa-desktop"></i> 申请审核</a>
                 </li>
                 <li>
-                    <a class="active-menu" href="audAnalysisList.html"><i class="fa fa-bar-chart-o"></i> 经济分类执行分析</a>
+                    <a href="audAnalysisList.html"><i class="fa fa-bar-chart-o"></i> 经济分类执行分析</a>
                 </li>
                 <li>
                     <a href="audLogList.html"><i class="fa fa-qrcode"></i> 审核日志</a>
@@ -125,8 +123,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="page-header">
-                        经济分类执行分析
-                        <small></small>
+                        预支付申请表
                     </h1>
                 </div>
             </div>
@@ -135,44 +132,40 @@
                 <div class="col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            经济分类执行分析
+                            申请详情
+                            <!--<small style="color: #58ff59">已通过</small>-->
+                            <small style="color: #ff0000">已驳回</small>
+                            <!--<small style="color: #ff7a17">稽核员审核中...</small>-->
                         </div>
                         <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-12 col-xs-12">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            Bar Chart
-                                        </div>
-                                        <div class="panel-body">
-                                            <div id="morris-bar-chart"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-12 col-xs-12">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            饼图
-                                        </div>
-                                        <div class="panel-body">
-                                            <div id="morris-donut-chart"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="panel-group" id="accordion">
-                                test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析...
-                                test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析...
-                                test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析...
-                                test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析...
-                                test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析...
-                                test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析...
-                                test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析...
+                                <table class="table table-striped table-bordered table-hover">
+                                    <tr>
+                                        <td colspan="4" style="text-align: center">预支付申请单</td>
+                                    </tr>
+                                    <tbody>
+                                    <tr>
+                                        <td colspan="2">申请人:×××</td>
+                                        <td>申请单位：××××××××</td>
+                                        <td>申请日期：××× - ×× - ××</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">申请金额：×××××</td>
+
+                                        <td>申请科目：××××××××××</td>
+                                        <td>附件:&nbsp&nbsp&nbsp&nbsp<button class="btn btn-primary btn-sm">查看附件</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">申请说明：××××××××××××××××××××××××××××××</td>
+
+                                    </tr>
+                                    </tbody>
+                                </table>
                             </div>
                             <div style="text-align: center">
-                                <a href="audAnalysisList.html" class="btn btn-default" style="margin: 20px 15px 20px 0">返回</a>
-                                <a href="#" class="btn btn-primary" style="margin: 20px 15px 20px 0">导出</a>
-                                <a href="#" class="btn btn-danger" style="margin: 20px 15px 20px 0">删除</a>
+                                <a href="reviewList.html" class="btn btn-default" style="margin: 20px 15px 20px 0">返回</a>
+                                <a href="#" class="btn btn-success" style="margin: 20px 15px 20px 0">导出</a>
+                                <a href="#" class="btn btn-danger" style="margin: 20px 15px 20px 0">保存</a>
                             </div>
                         </div>
                     </div>
@@ -183,16 +176,10 @@
     </div>
 </div>
 
-<!-- jQuery Js -->
 <script src="../assets/js/jquery-1.10.2.js"></script>
-<!-- Bootstrap Js -->
 <script src="../assets/js/bootstrap.min.js"></script>
-<!-- Metis Menu Js -->
 <script src="../assets/js/jquery.metisMenu.js"></script>
-<!-- Morris Chart Js -->
-<script src="../assets/js/morris/raphael-2.1.0.min.js"></script>
-<script src="../assets/js/morris/morris.js"></script>
-<!-- Custom Js -->
 <script src="../assets/js/custom-scripts.js"></script>
+
 </body>
 </html>

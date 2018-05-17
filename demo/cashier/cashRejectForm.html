@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>出纳首页</title>
-    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
-    <link href="assets/css/font-awesome.css" rel="stylesheet"/>
-    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet"/>
-    <link href="assets/css/custom-styles.css" rel="stylesheet"/>
+    <title>申请详情</title>
+    <!-- Bootstrap Styles-->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet"/>
+    <!-- FontAwesome Styles-->
+    <link href="../assets/css/font-awesome.css" rel="stylesheet"/>
+    <!-- Custom Styles-->
+    <link href="../assets/css/custom-styles.css" rel="stylesheet"/>
+    <!-- Google Fonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
 </head>
-
 <body>
-
 <div id="wrapper">
     <nav class="navbar navbar-default top-navbar" role="navigation">
         <div class="navbar-header">
@@ -23,7 +23,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="cashier.html">海天信息</a>
+            <a class="navbar-brand" href="../cashier.html">海天信息</a>
             <div style="width: 200px;margin: 0 0 0 260px;padding: 30px 0 0 0">
                 <small style="color:#fff;">欢迎您，Larry(出纳)！</small>
                 <!--欢迎您，{{name}}}+"("+{{ident}}+")"+"！"-->
@@ -36,7 +36,7 @@
                 </a>
                 <ul class="dropdown-menu dropdown-messages">
                     <li>
-                        <a href="cashier/cashMessage.html">
+                        <a href="cashMessage.html">
                             <div>
                                 <strong>会计A</strong>
                                 <span class="pull-right text-muted">
@@ -49,7 +49,7 @@
                     <li class="divider"></li>
 
                     <li>
-                        <a href="cashier/cashMessage.html">
+                        <a href="cashMessage.html">
                             <div>
                                 <strong>稽核员B</strong>
                                 <span class="pull-right text-muted">
@@ -61,7 +61,7 @@
                     </li>
                     <li class="divider"></li>
                     <li>
-                        <a class="text-center" href="cashier/cashMessageList.html">
+                        <a class="text-center" href="cashMessageList.html">
                             <strong>查看所有消息</strong>
                             <i class="fa fa-angle-right"></i>
                         </a>
@@ -79,7 +79,7 @@
                     <li><a href="#"><i class="fa fa-gear fa-fw"></i> 设置</a>
                     </li>
                     <li class="divider"></li>
-                    <li><a href="index.html"><i class="fa fa-sign-out fa-fw"></i> 退出系统</a>
+                    <li><a href="../index.html"><i class="fa fa-sign-out fa-fw"></i> 退出系统</a>
                     </li>
                 </ul>
                 <!-- /.dropdown-user -->
@@ -89,28 +89,25 @@
     <nav class="navbar-default navbar-side" role="navigation">
         <div class="sidebar-collapse">
             <ul class="nav" id="main-menu">
-                <li>
-                    <a href="cashier/apply.html"><i class="fa fa-sitemap"></i> 预支付申请<span class="fa arrow"></span></a>
+                <li class="active-menu">
+                    <a href="apply.html"><i class="fa fa-sitemap"></i> 预支付申请<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="cashier/apply.html"> 预支付申请</a>
+                            <a href="apply.html"> 预支付申请</a>
                         </li>
                         <li>
-                            <a href="cashier/applyList.html"> 申请列表</a>
+                            <a href="applyList.html"> 申请列表</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="cashier/apply.html"><i class="fa fa-desktop"></i> 预支付申请</a>
+                    <a href="importBudget.html"><i class="fa fa-bar-chart-o"></i> 经济科目预算导入</a>
                 </li>
                 <li>
-                    <a href="cashier/importBudget.html"><i class="fa fa-bar-chart-o"></i> 经济科目预算导入</a>
+                    <a href="importContact.html"><i class="fa fa-bar-chart-o"></i> 经济科目关系导入</a>
                 </li>
                 <li>
-                    <a href="cashier/importContact.html"><i class="fa fa-bar-chart-o"></i> 经济科目关系导入</a>
-                </li>
-                <li>
-                    <a href="cashier/cashLogList.html"><i class="fa fa-qrcode"></i> 系统日志</a>
+                    <a href="cashLogList.html"><i class="fa fa-qrcode"></i> 系统日志</a>
                 </li>
             </ul>
 
@@ -118,41 +115,66 @@
     </nav>
     <div id="page-wrapper">
         <div id="page-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="page-header">
+                        预支付申请表
+                    </h1>
+                </div>
+            </div>
+            <!-- /. ROW  -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            申请详情
+                            <!--<small style="color: #58ff59">已通过</small>-->
+                            <small style="color: #ff0000">已驳回</small>
+                            <!--<small style="color: #ff7a17">稽核员审核中...</small>-->
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-group" id="accordion">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <tr>
+                                        <td colspan="4" style="text-align: center">预支付申请单</td>
+                                    </tr>
+                                    <tbody>
+                                    <tr>
+                                        <td colspan="2">申请人:×××</td>
+                                        <td>申请单位：××××××××</td>
+                                        <td>申请日期：××× - ×× - ××</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">申请金额：×××××</td>
 
-            <div class="container-fluid">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="panel-group" id="accordion">
+                                        <td>申请科目：××××××××××</td>
+                                        <td>附件:&nbsp&nbsp&nbsp&nbsp<button class="btn btn-primary btn-sm">查看附件</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">申请说明：××××××××××××××××××××××××××××××</td>
+
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             <div style="text-align: center">
-                                <P>出纳欢迎页</P>
-                                <center><div style="width: 700px;height: 400px;background-color: #dedede"></div></center>
+                                <a href="applyList.html" class="btn btn-default" style="margin: 20px 15px 20px 0">返回</a>
+                                <a href="#" disabled="" class="btn btn-success" style="margin: 20px 15px 20px 0">打印单据</a>
+                                <a href="#" class="btn btn-danger" style="margin: 20px 15px 20px 0">保存</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- /. PAGE INNER  -->
     </div>
-    <center>
-        <footer><p>Copyright &copy; 2018.SeaSkySh</p></footer>
-    </center>
-</div>
 </div>
 
-<script src="assets/js/jquery-1.10.2.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.metisMenu.js"></script>
-<script src="assets/js/morris/raphael-2.1.0.min.js"></script>
-<script src="assets/js/morris/morris.js"></script>
-<script src="assets/js/dataTables/jquery.dataTables.js"></script>
-<script src="assets/js/dataTables/dataTables.bootstrap.js"></script>
-<script>
-    $(document).ready(function () {
-        $('#dataTables-example').dataTable();
-    });
-</script>
-<script src="assets/js/custom-scripts.js"></script>
+<script src="../assets/js/jquery-1.10.2.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/jquery.metisMenu.js"></script>
+<script src="../assets/js/custom-scripts.js"></script>
 
 </body>
-
 </html>
