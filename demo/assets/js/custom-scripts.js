@@ -26,37 +26,37 @@
             Morris.Bar({
                 element: 'morris-bar-chart',
                 data: [{
-                    y: '2006',
+                    y: '2011',
                     a: 100,
                     b: 90
                 }, {
-                    y: '2007',
-                    a: 75,
-                    b: 65
-                }, {
-                    y: '2008',
-                    a: 50,
-                    b: 40
-                }, {
-                    y: '2009',
-                    a: 75,
-                    b: 65
-                }, {
-                    y: '2010',
-                    a: 50,
-                    b: 40
-                }, {
-                    y: '2011',
-                    a: 75,
-                    b: 65
-                }, {
                     y: '2012',
+                    a: 75,
+                    b: 65
+                }, {
+                    y: '2013',
+                    a: 50,
+                    b: 40
+                }, {
+                    y: '2014',
+                    a: 75,
+                    b: 65
+                }, {
+                    y: '2015',
+                    a: 50,
+                    b: 40
+                }, {
+                    y: '2016',
+                    a: 75,
+                    b: 65
+                }, {
+                    y: '2017',
                     a: 100,
                     b: 90
                 }],
                 xkey: 'y',
                 ykeys: ['a', 'b'],
-                labels: ['Series A', 'Series B'],
+                labels: ['基建支出A', '基建支出B'],
                 hideHover: 'auto',
                 resize: true
             });
@@ -66,14 +66,14 @@
             Morris.Donut({
                 element: 'morris-donut-chart',
                 data: [{
-                    label: "Download Sales",
-                    value: 12
+                    label: "基本建设支出",
+                    value: 2895027.00
                 }, {
-                    label: "In-Store Sales",
-                    value: 30
+                    label: "公共预算财政拨款",
+                    value: 29910275.45
                 }, {
-                    label: "Mail-Order Sales",
-                    value: 20
+                    label: "其他资本性支出",
+                    value: 9497382.83
                 }],
                 resize: true
             });

@@ -94,7 +94,7 @@
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                           添加用户
+                            编辑用户
                         </div>
                         <div class="panel-body">
                             <ul class="nav nav-tabs">
@@ -103,9 +103,6 @@
                                 <li class=""><a href="#profile" data-toggle="tab">角色信息</a>
                                 </li>
                                 <li class=""><a href="#messages" data-toggle="tab">权限信息</a>
-                                <!--</li>-->
-                                <!--<li class=""><a href="#settings" data-toggle="tab">设置</a>-->
-                                <!--</li>-->
                             </ul>
 
                             <div class="tab-content">
@@ -114,18 +111,19 @@
                                     <form role="form" class="col-md-6">
                                         <div class="form-group">
                                             <label>用户名称<span style="color:#f00">&nbsp*</span></label>
-                                            <input class="form-control" placeholder="用户名称">
+                                            <input class="form-control" placeholder="用户名称" value="Jhon">
                                             <label>所属单位<span style="color:#f00">&nbsp*</span></label>
-                                            <input class="form-control" placeholder="所属单位">
+                                            <input class="form-control" placeholder="所属单位" value="×××××××××××">
                                             <label>电话号码</label>
-                                            <input class="form-control" placeholder="电话号码">
+                                            <input class="form-control" placeholder="电话号码" value="13345674567">
                                             <label>邮箱地址</span></label>
                                             <div class="form-group input-group">
                                                 <span class="input-group-addon">@</span>
-                                                <input type="text" class="form-control" placeholder="邮箱地址">
+                                                <input type="text" class="form-control" placeholder="邮箱地址" value="×××××××@×××.××">
                                             </div>
                                             <label>用户说明<span style="color:#f00">&nbsp*</span></label>
-                                            <textarea class="form-control" rows="3"></textarea>
+                                            <textarea class="form-control" rows="3">××××××××××××××××××××××××××××××××××××
+                                                ××××××××××××××××××××××××××××××××××××××××××××××××</textarea>
 
                                         </div>
                                     </form>
@@ -135,7 +133,7 @@
                                     <form role="form" class="col-md-12">
                                         <label>用户角色<span style="color:#f00">&nbsp*</span></label>
                                         <label class="checkbox-inline">
-                                            <input type="checkbox">管理员
+                                            <input type="checkbox" checked="checked">管理员
                                         </label>
                                         <label class="checkbox-inline">
                                             <input type="checkbox">领导
@@ -164,74 +162,74 @@
                                 <div class="tab-pane fade" id="messages">
                                     <div class="row">
                                         <div class="col-md-6 panel panel-default" style="margin: 20px 0 0 20px">
-                                       <label>权限列表</label>
-                                       <div class="checkbox">
-                                           <label>
-                                               <input type="checkbox" onclick="checkBox1()" value=""><span>权限 1</span>
-                                           </label>
-                                           <div id="checkBox1">
-                                           <div class="checkbox">
-                                               <label>
-                                                   <input onclick="qx1()" type="checkbox" value="">权限 1_A
-                                               </label>
-                                           </div>
-                                           <div class="checkbox">
-                                               <label>
-                                                   <input onclick="qx2()" type="checkbox" value="">权限 1_B
-                                               </label>
-                                           </div>
-                                           <div class="checkbox">
-                                               <label>
-                                                   <input onclick="qx3()" type="checkbox" value="">权限 1_C
-                                               </label>
-                                           </div>
-                                           </div>
-                                       </div>
-                                       <div class="checkbox">
-                                           <label>
-                                               <input type="checkbox" onclick="checkBox2()" value=""><span>权限 2</span>
-                                           </label>
-                                           <div id="checkBox2">
-                                           <div class="checkbox">
-                                               <label>
-                                                   <input onclick="qx4()" type="checkbox" value="">权限 2_A
-                                               </label>
-                                           </div>
-                                           <div class="checkbox">
-                                               <label>
-                                                   <input onclick="qx5()" type="checkbox" value="">权限 2_B
-                                               </label>
-                                           </div>
-                                           <div class="checkbox">
-                                               <label>
-                                                   <input onclick="qx6()" type="checkbox" value="">权限 2_C
-                                               </label>
-                                           </div>
-                                           </div>
-                                       </div>
-                                       <div class="checkbox">
-                                           <label>
-                                               <input type="checkbox" onclick="checkBox3()" value=""><span>权限 3</span>
-                                           </label>
-                                           <div id="checkBox3">
-                                           <div class="checkbox">
-                                               <label>
-                                                   <input onclick="qx7()" type="checkbox" value="">权限 3_A
-                                               </label>
-                                           </div>
-                                           <div class="checkbox">
-                                               <label>
-                                                   <input onclick="qx8()" type="checkbox" value="">权限 3_B
-                                               </label>
-                                           </div>
-                                           <div class="checkbox">
-                                               <label>
-                                                   <input onclick="qx9()" type="checkbox" value="">权限 3_C
-                                               </label>
-                                           </div>
-                                           </div>
-                                       </div>
-                                   </div>
+                                            <label>权限列表</label>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" onclick="checkBox1()" value=""><span>权限 1</span>
+                                                </label>
+                                                <div id="checkBox1">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input onclick="qx1()" type="checkbox" value="">权限 1_A
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input onclick="qx2()" type="checkbox" value="">权限 1_B
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input onclick="qx3()" type="checkbox" value="">权限 1_C
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" onclick="checkBox2()" value=""><span>权限 2</span>
+                                                </label>
+                                                <div id="checkBox2">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input onclick="qx4()" type="checkbox" value="">权限 2_A
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input onclick="qx5()" type="checkbox" value="">权限 2_B
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input onclick="qx6()" type="checkbox" value="">权限 2_C
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" onclick="checkBox3()" value=""><span>权限 3</span>
+                                                </label>
+                                                <div id="checkBox3">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input onclick="qx7()" type="checkbox" value="">权限 3_A
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input onclick="qx8()" type="checkbox" value="">权限 3_B
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input onclick="qx9()" type="checkbox" value="">权限 3_C
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="col-md-5 panel panel-default" style="margin: 20px 0 0 20px">
                                             已选权限：
                                             <div>
@@ -331,7 +329,7 @@
     }
 
     var qx_1 = false;
-    $("#qx_1").hide("500");
+    $("#qx_1").show("500");
     function qx1(){
         qx_1 = !qx_1;
         if(qx_1==true){
@@ -355,7 +353,7 @@
     }
 
     var qx_3 = false;
-    $("#qx_3").hide("500");
+    $("#qx_3").show("500");
     function qx3(){
         qx_3 = !qx_3;
         if(qx_3==true){
@@ -391,7 +389,7 @@
     }
 
     var qx_6 = false;
-    $("#qx_6").hide("500");
+    $("#qx_6").show("500");
     function qx6(){
         qx_6 = !qx_6;
         if(qx_6==true){
@@ -427,7 +425,7 @@
     }
 
     var qx_9 = false;
-    $("#qx_9").hide("500");
+    $("#qx_9").show("500");
     function qx9(){
         qx_9 = !qx_9;
         if(qx_9==true){

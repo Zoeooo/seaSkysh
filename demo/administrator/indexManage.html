@@ -66,7 +66,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="subManage.html"><i class="fa fa-desktop"></i> 科目管理</a>
+                    <a href="subManage.html"><i class="fa fa-desktop"></i> 申请科目管理</a>
                 </li>
                 <li>
                     <a class="active-menu" href="indexManage.html"><i class="fa fa-bar-chart-o"></i> 指标管理</a>
@@ -92,7 +92,39 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="panel panel-default">
-
+                        <form role="form">
+                            <div class="form-group">
+                                <label style="margin: 20px 0 25px 20px">导入经济科目指标</label>
+                                <input style="margin: 0 0 20px 20px" type="file">
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="margin: 20px 20px 20px 35%">导入</button>
+                            <button type="reset" class="btn btn-warning"  style="margin: 20px 20px 20px 0">取消</button>
+                        </form>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="margin: -54px 0 0 272px;position:absolute">预览</button>
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                             aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                            &times;
+                                        </button>
+                                        <h4 class="modal-title" id="myModalLabel">经济科目指标</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <center>
+                                            <div style="width: 450px;height: 600px;border: 2px solid #777;background-color: #ccc;">
+                                                <span style="color: #333;font-size: 30px;font-weight: bold;line-height:500px;position: relative;">表格内容</span>
+                                            </div>
+                                        </center>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
