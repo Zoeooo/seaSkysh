@@ -135,7 +135,7 @@
                                                 <form role="form">
                                                     <div class="row" align="center">
                                                         <div class="form-group col-md-4">
-                                                            <label>申请人：Larry</label>
+                                                            <label>申请单位：××××××××××××××</label>
                                                         </div>
                                                         <div class="form-group col-md-4">
                                                             <label>申请日期：2018-05-22</label>
@@ -145,8 +145,17 @@
                                                         </div>
                                                     </div>
                                                     <div class="row">
-                                                        <div class="form-group col-md-2">
-                                                            <label>选择预支付科目</label>
+                                                        <div class="form-group col-md-3">
+                                                            <label>选择指标</label>
+                                                            <select class="form-control">
+                                                                <option>人员支出_机关事业单位基本养老保险缴费</option>
+                                                                <option>人员支出_学前教育</option>
+                                                                <option>人员支出_住房公积金</option>
+                                                                <option>人员支出_事业单位医疗费</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-md-3">
+                                                            <label>选择经济科目</label>
                                                             <select class="form-control">
                                                                 <option>零账户</option>
                                                                 <option>专用存款</option>
@@ -171,15 +180,6 @@
                                                                 <option>电费</option>
                                                                 <option>邮电费</option>
                                                                 <option>手续费</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-group col-md-2">
-                                                            <label>选择预支付科目指标</label>
-                                                            <select class="form-control">
-                                                                <option>人员支出_机关事业单位基本养老保险缴费</option>
-                                                                <option>人员支出_学前教育</option>
-                                                                <option>人员支出_住房公积金</option>
-                                                                <option>人员支出_事业单位医疗费</option>
                                                             </select>
                                                         </div>
                                                         <div class="form-group col-md-2">
@@ -191,18 +191,6 @@
                                                             <input class="form-control" placeholder="金额" type="text">
                                                         </div>
                                                         <div class="form-group col-md-2">
-                                                            <label>请选择支付方式：</label>
-                                                            <select class="form-control">
-                                                                <option>现金</option>
-                                                                <option>贷记</option>
-                                                                <option>支票</option>
-                                                                <option>委托</option>
-                                                                <option>公务卡</option>
-                                                                <option>直付</option>
-                                                                <option>支出调整</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-group col-md-2">
                                                             <label>删除/添加一行：&nbsp&nbsp&nbsp&nbsp</label>
                                                             <button class="btn btn-sm btn-primary"
                                                                     style="margin: 2px 15px;">×
@@ -211,7 +199,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="row">
-                                                        <div class="form-group col-md-2">
+                                                        <div class="form-group col-md-3">
                                                             <select class="form-control">
                                                                 <option>零账户</option>
                                                                 <option>专用存款</option>
@@ -238,7 +226,7 @@
                                                                 <option>手续费</option>
                                                             </select>
                                                         </div>
-                                                        <div class="form-group col-md-2">
+                                                        <div class="form-group col-md-3">
                                                             <select class="form-control">
                                                                 <option>人员支出_机关事业单位基本养老保险缴费</option>
                                                                 <option>人员支出_学前教育</option>
@@ -247,21 +235,10 @@
                                                             </select>
                                                         </div>
                                                         <div class="form-group col-md-2">
-                                                            <input class="form-control" placeholder="摘要" type="text">
-                                                        </div>
-                                                        <div class="form-group col-md-2">
                                                             <input class="form-control" placeholder="金额" type="text">
                                                         </div>
                                                         <div class="form-group col-md-2">
-                                                            <select class="form-control">
-                                                                <option>现金</option>
-                                                                <option>贷记</option>
-                                                                <option>支票</option>
-                                                                <option>委托</option>
-                                                                <option>公务卡</option>
-                                                                <option>直付</option>
-                                                                <option>支出调整</option>
-                                                            </select>
+                                                            <input class="form-control" placeholder="摘要" type="text">
                                                         </div>
                                                         <div class="form-group col-md-2">
                                                             <button class="btn btn-sm btn-primary"
@@ -269,6 +246,18 @@
                                                             </button>
                                                             <button class="btn btn-sm btn-primary">+</button>
                                                         </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>请选择支付方式：</label>
+                                                        <select class="form-control">
+                                                            <option>现金</option>
+                                                            <option>贷记</option>
+                                                            <option>支票</option>
+                                                            <option>委托</option>
+                                                            <option>公务卡</option>
+                                                            <option>直付</option>
+                                                            <option>支出调整</option>
+                                                        </select>
                                                     </div>
                                                     <labal>申请金额：</labal>
                                                     <div class="form-group input-group col-md-12">
