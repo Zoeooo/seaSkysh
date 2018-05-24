@@ -2,20 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>日志列表</title>
-    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
-    <link href="../assets/css/font-awesome.css" rel="stylesheet" />
-    <link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
-    <link href="../assets/css/custom-styles.css" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href="../assets/css/bootstrap.css" rel="stylesheet"/>
+    <link href="../assets/css/font-awesome.css" rel="stylesheet"/>
+    <link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet"/>
+    <link href="../assets/css/custom-styles.css" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
     <style>
-        #dataTables-example th:hover{
+        #dataTables-example th:hover {
             background-color: #E5EBF2;
-            cursor:pointer;
+            cursor: pointer;
         }
-        #dataTables-example td:hover{
+
+        #dataTables-example td:hover {
             background-color: #E5EBF2;
         }
     </style>
@@ -146,229 +147,260 @@
                                     <thead>
                                     <tr>
                                         <th>单号</th>
-                                        <th>日期</th>
-                                        <th>账户</th>
-                                        <th>金额</th>
+                                        <th>单位编号</th>
+                                        <th>申请单位</th>
+                                        <th>申请时间</th>
                                         <th>状态</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr class="odd gradeX">
                                         <td><a href="audLog.html">20180500001</a></td>
+                                        <td>00000001</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-01</td>
-                                        <td>零账户</td>
-                                        <td>10000.00</td>
-                                        <td class="center" style="color: #00ff00">通过</td>
+                                       <td class="center" style="color: #00ff00">通过
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="even gradeC">
                                         <td><a href="audLog.html">20180500002</a></td>
+                                        <td>00000002</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-02</td>
-                                        <td>专用存款</td>
-                                        <td>10000.00</td>
-                                        <td class="center" style="color: #00ff00">通过</td>
+                                       <td class="center" style="color: #00ff00">通过
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="odd gradeA">
                                         <td><a href="audLog.html">20180500003</a></td>
+                                        <td>00000003</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-02</td>
-                                        <td>津贴补贴</td>
-                                        <td>10000.00</td>
-                                        <td class="center" style="color: #00ff00">通过</td>
+                                       <td class="center" style="color: #00ff00">通过
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="even gradeA">
                                         <td><a href="audLog.html">20180500004</a></td>
+                                        <td>00000004</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-02</td>
-                                        <td>绩效津贴</td>
-                                        <td>10000.00</td>
-                                        <td class="center" style="color: #00ff00">通过</td>
+                                       <td class="center" style="color: #00ff00">通过
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="odd gradeA">
                                         <td><a href="audLog.html">20180500005</a></td>
+                                        <td>00000005</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-03</td>
-                                        <td>住房公积金</td>
-                                        <td>20000.00</td>
-                                        <td class="center" style="color: #ff0000">驳回</td>
+                                        <td class="center" style="color: #ff0000">驳回
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="even gradeA">
                                         <td><a href="audLog.html">20180500006</a></td>
+                                        <td>00000006</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-04</td>
-                                        <td>绩效津贴</td>
-                                        <td>20000.00</td>
-                                        <td class="center" style="color: #d56c18">审核中...</td>
+                                        <td class="center" style="color: #d56c18">审核中...
+                                            &nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeA">
                                         <td><a href="audLog.html">20180500007</a></td>
+                                        <td>00000007</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-04</td>
-                                        <td>零账户</td>
-                                        <td>20000.00</td>
-                                        <td class="center" style="color: #d56c18">审核中...</td>
+                                        <td class="center" style="color: #d56c18">审核中...
+                                            &nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeA">
                                         <td><a href="audLog.html">20180500008</a></td>
+                                        <td>00000008</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-05</td>
-                                        <td>出纳</td>
-                                        <td class="center">1234.00</td>
-                                        <td class="center" style="color: #00ff00">通过</td>
+                                       <td class="center" style="color: #00ff00">通过
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeA">
                                         <td><a href="audLog.html">20180500009</a></td>
+                                        <td>00000009</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-05</td>
-                                        <td>零账户</td>
-                                        <td class="center">32435.00</td>
-                                        <td class="center" style="color: #ff0000">驳回</td>
+                                        <td class="center" style="color: #ff0000">驳回
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeA">
                                         <td><a href="audLog.html">20180500010</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-06</td>
-                                        <td>住房公积金</td>
-                                        <td class="center">3300.00</td>
-                                        <td class="center" style="color: #d56c18">审核中...</td>
+                                        <td class="center" style="color: #d56c18">审核中...
+                                            &nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeA">
                                         <td><a href="audLog.html">20180500011</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-08</td>
-                                        <td>专用存款</td>
-                                        <td class="center">27180.00</td>
-                                        <td class="center" style="color: #00ff00">通过</td>
+                                       <td class="center" style="color: #00ff00">通过
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeA">
                                         <td><a href="audLog.html">20180500012</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-10</td>
-                                        <td>绩效津贴</td>
-                                        <td class="center">77809.00</td>
-                                        <td class="center" style="color: #00ff00">通过</td>
+                                       <td class="center" style="color: #00ff00">通过
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeA">
                                         <td><a href="audLog.html">20180500013</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-11</td>
-                                        <td>零账户</td>
-                                        <td class="center">111.00</td>
-                                        <td class="center" style="color: #d56c18">审核中...</td>
+                                        <td class="center" style="color: #d56c18">审核中...
+                                            &nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeA">
                                         <td><a href="audLog.html">20180500014</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-12</td>
-                                        <td>住房公积金</td>
-                                        <td class="center">3667.00</td>
-                                        <td class="center" style="color: #00ff00">通过</td>
+                                       <td class="center" style="color: #00ff00">通过
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeA">
                                         <td><a href="audLog.html">20180500015</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-12</td>
-                                        <td>专用存款</td>
-                                        <td class="center">2334.00</td>
-                                        <td class="center" style="color: #00ff00">通过</td>
+                                       <td class="center" style="color: #00ff00">通过
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeA">
                                         <td><a href="audLog.html">20180500016</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-12</td>
-                                        <td>绩效津贴</td>
-                                        <td class="center">56578.00</td>
-                                        <td class="center" style="color: #d56c18">审核中...</td>
+                                        <td class="center" style="color: #d56c18">审核中...
+                                            &nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeA">
                                         <td><a href="audLog.html">20180500017</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-13</td>
-                                        <td>绩效津贴</td>
-                                        <td class="center">54645.00</td>
-                                        <td class="center" style="color: #00ff00">通过</td>
+                                       <td class="center" style="color: #00ff00">通过
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeA">
-                                        <td><a href="review.html">20180500018</a></td>
+                                        <td><a href="reviewAudior.html">20180500018</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-13</td>
-                                        <td>专用存款</td>
-                                        <td class="center">43535.00</td>
-                                        <td class="center" style="color: #ff0000">驳回</td>
+                                        <td class="center" style="color: #ff0000">驳回
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeA">
                                         <td><a href="audLog.html">20180500019</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-17</td>
-                                        <td>医疗费</td>
-                                        <td class="center">7856.00</td>
-                                        <td class="center" style="color: #d56c18">审核中...</td>
+                                        <td class="center" style="color: #d56c18">审核中...
+                                            &nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeA">
                                         <td><a href="audLog.html">20180500020</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-17</td>
-                                        <td>医疗费</td>
-                                        <td class="center">34531.00</td>
-                                        <td class="center" style="color: #00ff00">通过</td>
+                                       <td class="center" style="color: #00ff00">通过
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeC">
                                         <td><a href="audLog.html">20180500021</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-18</td>
-                                        <td>医疗费</td>
-                                        <td class="center">5432.00</td>
-                                        <td class="center" style="color: #00ff00">通过</td>
+                                       <td class="center" style="color: #00ff00">通过
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeA">
                                         <td><a href="audLog.html">20180500022</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-18</td>
-                                        <td>医疗费</td>
-                                        <td class="center">75422.00</td>
-                                        <td class="center" style="color: #d56c18">审核中...</td>
+                                        <td class="center" style="color: #d56c18">审核中...
+                                           &nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td></td>
                                     </tr>
                                     <tr class="gradeA">
                                         <td><a href="audLog.html">20180500023</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-22</td>
-                                        <td>伙食补助费</td>
-                                        <td class="center">35643.00</td>
-                                        <td class="center" style="color: #00ff00">通过</td>
+                                       <td class="center" style="color: #00ff00">通过
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeX">
                                         <td><a href="audLog.html">20180500024</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-22</td>
-                                        <td>伙食补助费</td>
-                                        <td class="center">87664.00</td>
-                                        <td class="center" style="color: #00ff00">通过</td>
+                                       <td class="center" style="color: #00ff00">通过
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeC">
                                         <td><a href="audLog.html">20180500025</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-22</td>
-                                        <td>伙食补助费</td>
-                                        <td class="center">56756.00</td>
-                                        <td class="center" style="color: #ff0000">驳回</td>
+                                        <td class="center" style="color: #ff0000">驳回
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeA">
                                         <td><a href="audLog.html">20180500026</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-22</td>
-                                        <td>伙食补助费</td>
-                                        <td class="center">4566.00</td>
-                                        <td class="center" style="color: #00ff00">通过</td>
+                                       <td class="center" style="color: #00ff00">通过
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeA">
                                         <td><a href="audLog.html">20180500027</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-22</td>
-                                        <td>伙食补助费</td>
-                                        <td class="center">456547.00</td>
-                                        <td class="center" style="color: #d56c18">审核中...</td>
+                                        <td class="center" style="color: #d56c18">审核中...
+                                            &nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeX">
                                         <td><a href="audLog.html">20180500028</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-23</td>
-                                        <td>其他工资福利</td>
-                                        <td class="center">1143.00</td>
-                                        <td class="center" style="color: #ff0000">驳回</td>
+                                        <td class="center" style="color: #ff0000">驳回
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeC">
                                         <td><a href="audLog.html">20180500029</a></td>
+                                        <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-23</td>
-                                        <td>其他工资福利</td>
-                                        <td class="center">9865.00</td>
-                                        <td class="center" style="color: #00ff00">通过</td>
+                                        <td class="center" style="color: #00ff00">通过
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeC">
                                         <td><a href="audLog.html">20180500030</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-23</td>
-                                        <td>其他工资福利</td>
-                                        <td class="center">7952.00</td>
-                                        <td class="center" style="color: #00ff00">通过</td>
+                                       <td class="center" style="color: #00ff00">通过
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn-sm btn-primary" href="">查看详情</a></td>
                                     </tr>
                                     <tr class="gradeU">
                                         <td><a href="audLog.html">20180500031</a></td>
+                                       <td>00000010</td>
+                                        <td>×××××××××××××××</td>
                                         <td>2018-05-23</td>
-                                        <td>其他工资福利</td>
-                                        <td class="center">21546.00</td>
-                                        <td class="center" style="color: #d56c18">审核中...</td>
+                                        <td class="center" style="color: #d56c18">审核中...
+                                            &nbsp&nbsp<a class="btn-sm btn-default" href="">查看详情</a></td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -378,7 +410,9 @@
                 </div>
             </div>
         </div>
-        <center><footer><p>Copyright &copy; 2018.SeaSkySh</p></footer></center>
+        <center>
+            <footer><p>Copyright &copy; 2018.SeaSkySh</p></footer>
+        </center>
     </div>
 </div>
 
