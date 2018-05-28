@@ -24,7 +24,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../admini.html">海天信息</a>
+            <a class="navbar-brand" href="admini.html">海天信息</a>
             <div style="width: 200px;margin: 0 0 0 260px;padding: 30px 0 0 0">
                 <small style="color:#fff;">欢迎您，John(管理员)！</small>
             </div>
@@ -73,9 +73,9 @@
                 <li>
                     <a href="indexManage.html"><i class="fa fa-bar-chart-o"></i> 指标管理</a>
                 </li>
-                <li>
-                    <a href="analysisList.html"><i class="fa fa-bar-chart-o"></i> 经济分类执行分析</a>
-                </li>
+                <!--<li>-->
+                <!--<a href="analysisList.html"><i class="fa fa-bar-chart-o"></i> 经济分类执行分析</a>-->
+                <!--</li>-->
                 <li>
                     <a class="active-menu" href="logList.html"><i class="fa fa-qrcode"></i> 查看日志</a>
                 </li>
@@ -101,81 +101,41 @@
                         </div>
                         <div class="panel-body">
                             <div class="panel-group" id="accordion">
-                                <table class="table table-striped table-bordered table-hover" style="text-align: center;">
-                                    <h4>[申请单号：20180500001]</h4>
+                                <table class="table table-striped table-bordered table-hover"
+                                       style="text-align: center;">
+                                    <div style="margin: 0 0 20px 0;font-size: 15px;font-weight: bold">
+                                        <span style="margin: 0 30px 0 0">申请单号：20180500001</span>
+                                        <span style="margin: 0 30px 0 0">申请单位：×××××××××××</span>
+                                        <span style="margin: 0 30px 0 0">申请人：Larry</span>
+                                        <span style="margin: 0 30px 0 0">申请日期：2018-05-22</span>
+                                    </div>
                                     <thead>
                                     <tr>
-                                        <th>提交日期</th>
-                                        <th>提交单位</th>
-                                        <th>会计审核日期</th>
-                                        <th>会计审核记录</th>
-                                        <th>稽核员审核日期</th>
-                                        <th>稽核员审核记录</th>
-                                        <th>支付凭证</th>
-                                        <th>支付状态</th>
+                                        <th style="text-align: center;">审核会计</th>
+                                        <th style="text-align: center;">会计审核日期</th>
+                                        <th style="text-align: center;">会计审核结果</th>
+                                        <th style="text-align: center;">审核稽核员</th>
+                                        <th style="text-align: center;">稽核员审核日期</th>
+                                        <th style="text-align: center;">稽核员审核结果</th>
+                                        <th style="text-align: center;">审核结果</th>
+                                        <th style="text-align: center;">支付凭证</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
+                                        <td>Solaka</td>
                                         <td>2018-05-23</td>
-                                        <td>××××××××××××</td>
-                                        <td>2018-05-23</td>
-                                        <td>已提交稽核员</td>
+                                        <td style="color: #5cb85c">通过</td>
+                                        <td>Ricard</td>
                                         <td>2018-05-24</td>
-                                        <td style="color: #58ff59">通过</td>
-                                        <td>未打印</td>
-                                        <td>未支付</td>
+                                        <td style="color: #f00">发票与金额不符</td>
+                                        <td style="color: #f00">已驳回</td>
+                                        <td>-</td>
                                     </tr>
-                                    <!--<tr>-->
-                                    <!--<td>2018-05-22</td>-->
-                                    <!--<td>××××××××××××</td>-->
-                                    <!--<td>2018-05-23</td>-->
-                                    <!--<td  style="color: #5cb85c">通过</td>-->
-                                    <!--<td>-</td>-->
-                                    <!--<td>-</td>-->
-                                    <!--<td>已打印</td>-->
-                                    <!--<td>已支付</td>-->
-                                    <!--</tr>-->
-                                    <!--<tr>-->
-                                    <!--<td>2018-05-22</td>-->
-                                    <!--<td>××××××××××××</td>-->
-                                    <!--<td>2018-05-23</td>-->
-                                    <!--<td style="color: #5cb85c">通过</td>-->
-                                    <!--<td>-</td>-->
-                                    <!--<td>-</td>-->
-                                    <!--<td>已打印</td>-->
-                                    <!--<td>未支付</td>-->
-                                    <!--</tr>-->
-                                    <!--<tr>-->
-                                    <!--<td>2018-05-23</td>-->
-                                    <!--<td>××××××××××××</td>-->
-                                    <!--<td>2018-05-23</td>-->
-                                    <!--<td>已提交稽核员</td>-->
-                                    <!--<td>2018-05-24</td>-->
-                                    <!--<td style="color: #f00">驳回</td>-->
-                                    <!--<td>-</td>-->
-                                    <!--<td>-</td>-->
-                                    <!--</tr>-->
-                                    <!--<tr>-->
-                                    <!--<td>2018-05-23</td>-->
-                                    <!--<td>××××××××××××</td>-->
-                                    <!--<td>2018-05-23</td>-->
-                                    <!--<td>已提交稽核员</td>-->
-                                    <!--<td>2018-05-24</td>-->
-                                    <!--<td style="color: #58ff59">通过</td>-->
-                                    <!--<td>未打印</td>-->
-                                    <!--<td>未支付</td>-->
-                                    <!--</tr>-->
-                                    <!--<tr>-->
-                                    <!--<td>2018-05-23</td>-->
-                                    <!--<td>××××××××××××</td>-->
-                                    <!--<td>2018-05-23</td>-->
-                                    <!--<td>已提交稽核员</td>-->
-                                    <!--<td>2018-05-24</td>-->
-                                    <!--<td style="color: #d56c18">审核中...</td>-->
-                                    <!--<td>-</td>-->
-                                    <!--<td>-</td>-->
-                                    <!--</tr>-->
+                                    <tr>
+                                        <td colspan="2">摘要</td>
+                                        <td colspan="6">××××××××××××× ×××××××××××× ××××××××××××</td>
+                                    </tr>
                                     <tr>
                                         <td colspan="2">会计审核意见</td>
                                         <td colspan="6">××××××××××××× ×××××××××××× ××××××××××××</td>
@@ -184,12 +144,16 @@
                                         <td colspan="2">稽核员审核意见</td>
                                         <td colspan="6">××××××××××××× ×××××××××××× ××××××××××××</td>
                                     </tr>
+                                    <tr>
+                                        <td colspan="8" style="text-align: right">复核员：Amy&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                                    </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <div style="text-align: center">
-                                <a href="applyList.html" class="btn btn-default" style="margin: 20px 15px 20px 0">返回</a>
+                                <a href="logList.html" class="btn btn-default" style="margin: 20px 15px 20px 0">返回</a>
                                 <a href="#" class="btn btn-primary" style="margin: 20px 15px 20px 0">打印</a>
+                                <a href="#" class="btn btn-danger">删除</a>
                             </div>
                         </div>
                     </div>

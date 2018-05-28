@@ -17,7 +17,6 @@
 </head>
 <body>
 <div id="wrapper">
-    <!--顶部导航-->
     <nav class="navbar navbar-default top-navbar" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
@@ -26,65 +25,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../auditor.html">海天信息</a>
+            <a class="navbar-brand" href="../administrator/admini.html">海天信息</a>
             <div style="width: 200px;margin: 0 0 0 260px;padding: 30px 0 0 0">
-                <small style="color:#fff;">欢迎您，Richard(稽核员)！</small>
-                <!--欢迎您，{{name}}}+"("+{{ident}}+")"+"！"-->
+                <small style="color:#fff;">欢迎您，John(管理员)！</small>
             </div>
         </div>
 
         <ul class="nav navbar-top-links navbar-right">
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
-                    <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-messages">
-                    <li>
-                        <a href="audMessage.html">
-                            <div>
-                                <strong>会计A</strong>
-                                <span class="pull-right text-muted">
-                                        <em>今天</em>
-                                    </span>
-                            </div>
-                            <div>您有一条预支付申请待审核...</div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="audMessage.html">
-                            <div>
-                                <strong>会计B</strong>
-                                <span class="pull-right text-muted">
-                                        <em>今天</em>
-                                    </span>
-                            </div>
-                            <div>您有一条预支付申请待审核...</div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="audMessage.html">
-                            <div>
-                                <strong>会计C</strong>
-                                <span class="pull-right text-muted">
-                                        <em>今天</em>
-                                    </span>
-                            </div>
-                            <div>您有一条预支付申请待审核...</div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a class="text-center" href="audMessageList.html">
-                            <strong>查看所有消息</strong>
-                            <i class="fa fa-angle-right"></i>
-                        </a>
-                    </li>
-                </ul>
-                <!-- /.dropdown-messages -->
-            </li>
-            <!-- /.dropdown -->
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                     <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
@@ -103,21 +50,36 @@
             <!-- /.dropdown -->
         </ul>
     </nav>
-    <!--左边导航-->
     <nav class="navbar-default navbar-side" role="navigation">
         <div class="sidebar-collapse">
             <ul class="nav" id="main-menu">
                 <li>
-                    <a href="reviewList.html"><i class="fa fa-desktop"></i> 申请审核</a>
+                    <a href="../administrator/userManage.html"><i class="fa fa-sitemap"></i> 用户管理<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="../administrator/userManage.html">用户管理</a>
+                        </li>
+                        <li>
+                            <a href="../administrator/userList.html"> 用户列表</a>
+                        </li>
+                        <li>
+                            <a href="../administrator/userIdent.html">用户角色</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <a class="active-menu" href="audAnalysisList.html"><i class="fa fa-bar-chart-o"></i> 经济分类执行分析</a>
+                    <a href="../administrator/subManage.html"><i class="fa fa-desktop"></i> 经济科目申请规则</a>
                 </li>
                 <li>
-                    <a href="audLogList.html"><i class="fa fa-qrcode"></i> 审核日志</a>
+                    <a href="../administrator/indexManage.html"><i class="fa fa-bar-chart-o"></i> 指标管理</a>
+                </li>
+                <li>
+                    <a class="active-menu" href="analysisList.html"><i class="fa fa-bar-chart-o"></i> 经济分类执行分析</a>
+                </li>
+                <li>
+                    <a href="../administrator/logList.html"><i class="fa fa-qrcode"></i> 查看日志</a>
                 </li>
             </ul>
-
         </div>
     </nav>
     <div id="page-wrapper">
@@ -142,7 +104,7 @@
                                 <div class="col-md-6 col-sm-12 col-xs-12">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
-                                            Bar Chart
+                                            柱状图
                                         </div>
                                         <div class="panel-body">
                                             <div id="morris-bar-chart"></div>
@@ -161,16 +123,16 @@
                                 </div>
                             </div>
                             <div class="panel-group" id="accordion">
-                                test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析...
-                                test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析...
-                                test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析...
-                                test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析...
-                                test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析...
-                                test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析...
-                                test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析， test这是一条分析...
+                                test这是一条分析内容， test这是一条分析内容， test这是一条分析内容， test这是一条分析内容， test这是一条分析内容...
+                                test这是一条分析内容， test这是一条分析内容， test这是一条分析内容， test这是一条分析内容， test这是一条分析内容...
+                                test这是一条分析内容， test这是一条分析内容， test这是一条分析内容， test这是一条分析内容， test这是一条分析内容...
+                                test这是一条分析内容， test这是一条分析内容， test这是一条分析内容， test这是一条分析内容， test这是一条分析内容...
+                                test这是一条分析内容， test这是一条分析内容， test这是一条分析内容， test这是一条分析内容， test这是一条分析内容...
+                                test这是一条分析内容， test这是一条分析内容， test这是一条分析内容， test这是一条分析内容， test这是一条分析内容...
+                                test这是一条分析内容， test这是一条分析内容， test这是一条分析内容， test这是一条分析内容， test这是一条分析...
                             </div>
                             <div style="text-align: center">
-                                <a href="audAnalysisList.html" class="btn btn-default" style="margin: 20px 15px 20px 0">返回</a>
+                                <a href="../auditor/audMessageList.html" class="btn btn-default" style="margin: 20px 15px 20px 0">返回</a>
                                 <a href="#" class="btn btn-primary" style="margin: 20px 15px 20px 0">导出</a>
                                 <a href="#" class="btn btn-danger" style="margin: 20px 15px 20px 0">删除</a>
                             </div>
@@ -183,7 +145,7 @@
     </div>
 </div>
 
-<!-- jQuery Js -->
+
 <script src="../assets/js/jquery-1.10.2.js"></script>
 <!-- Bootstrap Js -->
 <script src="../assets/js/bootstrap.min.js"></script>

@@ -24,7 +24,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../admini.html">海天信息</a>
+            <a class="navbar-brand" href="admini.html">海天信息</a>
             <div style="width: 200px;margin: 0 0 0 260px;padding: 30px 0 0 0">
                 <small style="color:#fff;">欢迎您，John(管理员)！</small>
             </div>
@@ -74,9 +74,6 @@
                     <a href="indexManage.html"><i class="fa fa-bar-chart-o"></i> 指标管理</a>
                 </li>
                 <li>
-                    <a href="analysisList.html"><i class="fa fa-bar-chart-o"></i> 经济分类执行分析</a>
-                </li>
-                <li>
                     <a class="active-menu" href="logList.html"><i class="fa fa-qrcode"></i> 查看日志</a>
                 </li>
             </ul>
@@ -99,93 +96,162 @@
                             日志列表
                         </div>
                         <div class="panel-body">
-                            <div class="panel-group" id="accordion">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">单号：20180500001</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
-                                        <div class="panel-body">
-                                            [申请日期：2018-05-01]&nbsp&nbsp&nbsp&nbsp[申请单位：
-                                            <span style="color: #5bc0de">×××××××××××××××</span>
-                                            ]&nbsp&nbsp&nbsp[状态：
-                                            <span style="color: #5cb85c">已通过</span>
-                                            ]&nbsp&nbsp&nbsp[审核人：×××]
-                                            <a href="log.html" class="btn btn-primary">查看详情</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">单号：20180500002</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse in" style="height: auto;">
-                                        <div class="panel-body">
-                                            [申请日期：2018-05-01]&nbsp&nbsp&nbsp&nbsp[申请单位：
-                                            <span style="color: #5bc0de">×××××××××××××××</span>
-                                            ]&nbsp&nbsp&nbsp[状态：
-                                            <span style="color: #5cb85c">已通过</span>
-                                            ]&nbsp&nbsp&nbsp[审核人：×××]
-                                            <a href="log_2.html.html" class="btn btn-primary">查看详情</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">单号：20180500003</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseThree" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            [申请日期：2018-05-01]&nbsp&nbsp&nbsp&nbsp[申请单位：
-                                            <span style="color: #5bc0de">×××××××××××××××</span>
-                                            ]&nbsp&nbsp&nbsp[状态：
-                                            <span style="color: #5cb85c">已通过</span>
-                                            ]&nbsp&nbsp&nbsp[审核人：×××]
-                                            <a href="log.html" class="btn btn-primary">查看详情</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="collapsed">单号：20180500004</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseFour" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            [申请日期：2018-05-01]&nbsp&nbsp&nbsp&nbsp[申请单位：
-                                            <span style="color: #5bc0de">×××××××××××××××</span>
-                                            ]&nbsp&nbsp&nbsp[状态：
-                                            <span style="color: #5cb85c">已通过</span>
-                                            ]&nbsp&nbsp&nbsp[审核人：×××]
-                                            <a href="log.html" class="btn btn-primary">查看详情</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" class="collapsed">单号：20180500005</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseFive" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            [申请日期：2018-05-01]&nbsp&nbsp&nbsp&nbsp[申请单位：
-                                            <span style="color: #5bc0de">×××××××××××××××</span>
-                                            ]&nbsp&nbsp&nbsp[状态：
-                                            <span style="color: #5cb85c">已通过</span>
-                                            ]&nbsp&nbsp&nbsp[审核人：×××]
-                                            <a href="log.html" class="btn btn-primary">查看详情</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <table border="1" style="font-size: 13px;text-align: center;border: #bbb 1px solid;margin: 0 auto 20px">
+                                <thead>
+                                <tr style="height: 40px">
+                                    <td style="padding: 0 5px 0 5px">申请单号</td>
+                                    <td>申请单位</td>
+                                    <td>摘要</td>
+                                    <td>申请人</td>
+                                    <td>申请时间</td>
+                                    <td>会计</td>
+                                    <td>会计审核结果</td>
+                                    <td>稽核员</td>
+                                    <td>稽核员审核结果</td>
+                                    <td>状态</td>
+                                    <td>复核员</td>
+                                    <td>凭条</td>
+                                    <td>查看详情</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr style="height: 40px">
+                                    <td style="padding: 0 5px 0 5px">20180500001</td>
+                                    <td style="padding: 0 5px 0 5px">××××××××××</td>
+                                    <td style="padding: 0 5px 0 5px">××××××××××</td>
+                                    <td style="padding: 0 5px 0 5px">Larry</td>
+                                    <td style="padding: 0 5px 0 5px">05-10</td>
+                                    <td style="padding: 0 5px 0 5px">Solaka</td>
+                                    <td style="padding: 0 5px 0 5px">提交稽核员</td>
+                                    <td style="padding: 0 5px 0 5px">Richard</td>
+                                    <td style="padding: 0 5px 0 5px">通过</td>
+                                    <td style="padding: 0 5px 0 5px">已通过</td>
+                                    <td style="padding: 0 5px 0 5px">Amy</td>
+                                    <td style="padding: 0 5px 0 5px">已打印</td>
+                                    <td style="padding: 0 5px 0 5px"><a class="btn btn-xs btn-primary" href="log.html">查看详情</a></td>
+                                </tr>
+                                <tr style="height: 40px">
+                                    <td>20180500001</td>
+                                    <td>××××××××××</td>
+                                    <td>××××××××××</td>
+                                    <td>Larry</td>
+                                    <td>05-10</td>
+                                    <td>Solaka</td>
+                                    <td>已提交稽核员</td>
+                                    <td>Richard</td>
+                                    <td>驳回</td>
+                                    <td>未通过</td>
+                                    <td>Amy</td>
+                                    <td>-</td>
+                                    <td><a class="btn btn-xs btn-primary" href="log_2.html">查看详情</a></td>
+                                </tr>
+                                <tr style="height: 40px">
+                                    <td>20180500001</td>
+                                    <td>××××××××××</td>
+                                    <td>××××××××××</td>
+                                    <td>Sophia</td>
+                                    <td>05-10</td>
+                                    <td>Riven</td>
+                                    <td>通过</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>已通过</td>
+                                    <td>Amy</td>
+                                    <td>已打印</td>
+                                    <td><a class="btn btn-xs btn-primary" href="log.html">查看详情</a></td>
+                                </tr>
+                                <tr style="height: 40px">
+                                    <td>20180500001</td>
+                                    <td>××××××××××</td>
+                                    <td>××××××××××</td>
+                                    <td>Larry</td>
+                                    <td>05-10</td>
+                                    <td>Solaka</td>
+                                    <td>已提交稽核员</td>
+                                    <td>Richard</td>
+                                    <td>通过</td>
+                                    <td>已通过</td>
+                                    <td>Amy</td>
+                                    <td>未打印</td>
+                                    <td><a class="btn btn-xs btn-primary" href="">查看详情</a></td>
+                                </tr>
+                                <tr style="height: 40px">
+                                    <td>20180500001</td>
+                                    <td>××××××××××</td>
+                                    <td>××××××××××</td>
+                                    <td>Larry</td>
+                                    <td>05-10</td>
+                                    <td>Solaka</td>
+                                    <td>驳回</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>驳回</td>
+                                    <td>Amy</td>
+                                    <td>-</td>
+                                    <td><a class="btn btn-xs btn-primary" href="">查看详情</a></td>
+                                </tr>
+                                <tr style="height: 40px">
+                                    <td>20180500001</td>
+                                    <td>××××××××××</td>
+                                    <td>××××××××××</td>
+                                    <td>Sophia</td>
+                                    <td>05-10</td>
+                                    <td>Riven</td>
+                                    <td>通过</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>已通过</td>
+                                    <td>Amy</td>
+                                    <td>已打印</td>
+                                    <td><a class="btn btn-xs btn-primary" href="">查看详情</a></td>
+                                </tr>
+                                <tr style="height: 40px">
+                                    <td>20180500001</td>
+                                    <td>××××××××××</td>
+                                    <td>××××××××××</td>
+                                    <td>Larry</td>
+                                    <td>05-10</td>
+                                    <td>Solaka</td>
+                                    <td>已提交稽核员</td>
+                                    <td>Richard</td>
+                                    <td>通过</td>
+                                    <td>已通过</td>
+                                    <td>Amy</td>
+                                    <td>未打印</td>
+                                    <td><a class="btn btn-xs btn-primary" href="">查看详情</a></td>
+                                </tr>
+                                <tr style="height: 40px">
+                                    <td>20180500001</td>
+                                    <td>××××××××××</td>
+                                    <td>××××××××××</td>
+                                    <td>Larry</td>
+                                    <td>05-10</td>
+                                    <td>Solaka</td>
+                                    <td>已提交稽核员</td>
+                                    <td>Richard</td>
+                                    <td>驳回</td>
+                                    <td>未通过</td>
+                                    <td>Amy</td>
+                                    <td>-</td>
+                                    <td><a class="btn btn-xs btn-primary" href="">查看详情</a></td>
+                                </tr>
+                                <tr style="height: 40px">
+                                    <td>20180500001</td>
+                                    <td>××××××××××</td>
+                                    <td>××××××××××</td>
+                                    <td>Larry</td>
+                                    <td>05-10</td>
+                                    <td>Solaka</td>
+                                    <td>驳回</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>驳回</td>
+                                    <td>Amy</td>
+                                    <td>-</td>
+                                    <td><a class="btn btn-xs btn-primary" href="">查看详情</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>

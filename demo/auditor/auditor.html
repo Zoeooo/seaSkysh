@@ -5,10 +5,10 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>审核员首页</title>
-    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
-    <link href="assets/css/font-awesome.css" rel="stylesheet"/>
-    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet"/>
-    <link href="assets/css/custom-styles.css" rel="stylesheet"/>
+    <link href="../assets/css/bootstrap.css" rel="stylesheet"/>
+    <link href="../assets/css/font-awesome.css" rel="stylesheet"/>
+    <link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet"/>
+    <link href="../assets/css/custom-styles.css" rel="stylesheet"/>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
 </head>
 
@@ -36,7 +36,7 @@
                 </a>
                 <ul class="dropdown-menu dropdown-messages">
                     <li>
-                        <a href="auditor/audMessage.html">
+                        <a href="audMessage.html">
                             <div>
                                 <strong>会计A</strong>
                                 <span class="pull-right text-muted">
@@ -48,7 +48,7 @@
                     </li>
                     <li class="divider"></li>
                     <li>
-                        <a href="auditor/audMessage.html">
+                        <a href="audMessage.html">
                             <div>
                                 <strong>会计B</strong>
                                 <span class="pull-right text-muted">
@@ -60,7 +60,7 @@
                     </li>
                     <li class="divider"></li>
                     <li>
-                        <a href="auditor/audMessage.html">
+                        <a href="audMessage.html">
                             <div>
                                 <strong>会计C</strong>
                                 <span class="pull-right text-muted">
@@ -72,7 +72,7 @@
                     </li>
                     <li class="divider"></li>
                     <li>
-                        <a class="text-center" href="auditor/audMessageList.html">
+                        <a class="text-center" href="audMessageList.html">
                             <strong>查看所有消息</strong>
                             <i class="fa fa-angle-right"></i>
                         </a>
@@ -90,7 +90,7 @@
                     <li><a href="#"><i class="fa fa-gear fa-fw"></i> 设置</a>
                     </li>
                     <li class="divider"></li>
-                    <li><a href="index.html"><i class="fa fa-sign-out fa-fw"></i> 退出系统</a>
+                    <li><a href="../index.html"><i class="fa fa-sign-out fa-fw"></i> 退出系统</a>
                     </li>
                 </ul>
                 <!-- /.dropdown-user -->
@@ -101,13 +101,13 @@
         <div class="sidebar-collapse">
             <ul class="nav" id="main-menu">
                 <li>
-                    <a class="active-menu" href="auditor/reviewList.html"><i class="fa fa-desktop"></i> 申请审核</a>
+                    <a class="active-menu" href="reviewList.html"><i class="fa fa-desktop"></i> 申请审核</a>
                 </li>
+                <!--<li>-->
+                    <!--<a href="auditor/audAnalysisList.html"><i class="fa fa-bar-chart-o"></i> 经济分类执行分析</a>-->
+                <!--</li>-->
                 <li>
-                    <a href="auditor/audAnalysisList.html"><i class="fa fa-bar-chart-o"></i> 经济分类执行分析</a>
-                </li>
-                <li>
-                    <a href="auditor/audLogList.html"><i class="fa fa-qrcode"></i> 审核日志</a>
+                    <a href="audLogList.html"><i class="fa fa-qrcode"></i> 审核日志</a>
                 </li>
             </ul>
 
@@ -147,19 +147,19 @@
 </div>
 </div>
 
-<script src="assets/js/jquery-1.10.2.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.metisMenu.js"></script>
-<script src="assets/js/morris/raphael-2.1.0.min.js"></script>
-<script src="assets/js/morris/morris.js"></script>
-<script src="assets/js/dataTables/jquery.dataTables.js"></script>
-<script src="assets/js/dataTables/dataTables.bootstrap.js"></script>
+<script src="../assets/js/jquery-1.10.2.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/jquery.metisMenu.js"></script>
+<script src="../assets/js/morris/raphael-2.1.0.min.js"></script>
+<script src="../assets/js/morris/morris.js"></script>
+<script src="../assets/js/dataTables/jquery.dataTables.js"></script>
+<script src="../assets/js/dataTables/dataTables.bootstrap.js"></script>
 <script>
     $(document).ready(function () {
         $('#dataTables-example').dataTable();
     });
 </script>
-<script src="assets/js/custom-scripts.js"></script>
+<script src="../assets/js/custom-scripts.js"></script>
 
 </body>
 
