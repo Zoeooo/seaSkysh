@@ -2,14 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>经济科目指标管理</title>
-    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
-    <link href="../assets/css/font-awesome.css" rel="stylesheet" />
-    <link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
-    <link href="../assets/css/custom-styles.css" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href="../assets/css/bootstrap.css" rel="stylesheet"/>
+    <link href="../assets/css/font-awesome.css" rel="stylesheet"/>
+    <link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet"/>
+    <link href="../assets/css/custom-styles.css" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+    <style>
+        #page-wrapper {
+            padding: 15px 30px;
+            min-height: 600px;
+        }
+        #page-inner {
+            min-height:600px;
+        }
+    </style>
 </head>
 
 <body>
@@ -71,9 +80,6 @@
                 <li>
                     <a class="active-menu" href="indexManage.html"><i class="fa fa-bar-chart-o"></i> 指标管理</a>
                 </li>
-                <!--<li>-->
-                    <!--<a href="analysisList.html"><i class="fa fa-bar-chart-o"></i> 经济分类执行分析</a>-->
-                <!--</li>-->
                 <li>
                     <a href="logList.html"><i class="fa fa-qrcode"></i> 查看日志</a>
                 </li>
@@ -98,9 +104,11 @@
                                 <input style="margin: 0 0 20px 20px" type="file">
                             </div>
                             <button type="submit" class="btn btn-primary" style="margin: 20px 20px 20px 35%">导入</button>
-                            <button type="reset" class="btn btn-warning"  style="margin: 20px 20px 20px 0">取消</button>
+                            <button type="reset" class="btn btn-warning" style="margin: 20px 20px 20px 0">取消</button>
                         </form>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="margin: -54px 0 0 272px;position:absolute">预览</button>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal"
+                                style="margin: -54px 0 0 272px;position:absolute">预览
+                        </button>
                         <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
                              aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -129,7 +137,9 @@
                 </div>
             </div>
         </div>
-        <center><footer><p>Copyright &copy; 2018.SeaSkySh</p></footer></center>
+        <center>
+            <footer><p>Copyright &copy; 2018.SeaSkySh</p></footer>
+        </center>
     </div>
 </div>
 

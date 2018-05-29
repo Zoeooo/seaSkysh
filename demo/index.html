@@ -13,7 +13,10 @@
     <style>
         #page-wrapper {
             padding: 15px 30px;
-            min-height: 1200px;
+            min-height: 600px;
+        }
+        #page-inner {
+            min-height:700px;
         }
     </style>
 </head>
@@ -50,7 +53,7 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <div class="panel-group" id="accordion">
-                                <div style="text-align: center">
+                                <div style="text-align: center;margin: 100px auto 200px">
                                     <a href="analysis/analysis.html" class="btn btn-primary"
                                        style="margin: 20px 35px 20px 0;height: 80px;line-height: 60px">分析系统</a>
                                     <a href="auditor/auditor.html" class="btn btn-primary"
@@ -66,7 +69,7 @@
                 </div>
             </div>
         </div>
-        <!-- /. PAGE INNER  -->
+        <center><footer><p>Copyright &copy; 2018.SeaSkySh</p></footer></center>
     </div>
 
 </div>
@@ -84,7 +87,11 @@
     });
 </script>
 <script src="assets/js/custom-scripts.js"></script>
-
+<script>
+   // A = $(window).height()+"px";
+   // alert(A);
+   //  $("#page-inner").css("min-height","A");
+</script>
 </body>
 
 </html>
