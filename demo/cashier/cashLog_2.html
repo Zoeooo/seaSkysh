@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>申请详情</title>
-    <!-- Bootstrap Styles-->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet"/>
-    <!-- FontAwesome Styles-->
-    <link href="../assets/css/font-awesome.css" rel="stylesheet"/>
-    <!-- Custom Styles-->
-    <link href="../assets/css/custom-styles.css" rel="stylesheet"/>
-    <!-- Google Fonts-->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>日志详情</title>
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="../assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <link href="../assets/css/custom-styles.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
+
 <body>
+
 <div id="wrapper">
-    <!--顶部导航-->
     <nav class="navbar navbar-default top-navbar" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
@@ -24,13 +23,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../index.html">海天信息</a>
+            <a class="navbar-brand" href="cashier.html">海天信息</a>
             <div style="width: 200px;margin: 0 0 0 260px;padding: 30px 0 0 0">
-                <small style="color:#fff;">欢迎您，Richard(稽核员)！</small>
+                <small style="color:#fff;">欢迎您，Larry(出纳)！</small>
                 <!--欢迎您，{{name}}}+"("+{{ident}}+")"+"！"-->
             </div>
         </div>
-
         <ul class="nav navbar-top-links navbar-right">
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
@@ -38,43 +36,32 @@
                 </a>
                 <ul class="dropdown-menu dropdown-messages">
                     <li>
-                        <a href="audMessage.html">
+                        <a href="cashMessage.html">
                             <div>
                                 <strong>会计A</strong>
                                 <span class="pull-right text-muted">
                                         <em>今天</em>
                                     </span>
                             </div>
-                            <div>您有一条预支付申请待审核...</div>
+                            <div>您有一条申请反馈消息...</div>
                         </a>
                     </li>
                     <li class="divider"></li>
+
                     <li>
-                        <a href="audMessage.html">
+                        <a href="cashMessage.html">
                             <div>
-                                <strong>会计B</strong>
+                                <strong>稽核员B</strong>
                                 <span class="pull-right text-muted">
                                         <em>今天</em>
                                     </span>
                             </div>
-                            <div>您有一条预支付申请待审核...</div>
+                            <div>您有一条申请反馈消息...</div>
                         </a>
                     </li>
                     <li class="divider"></li>
                     <li>
-                        <a href="audMessage.html">
-                            <div>
-                                <strong>会计C</strong>
-                                <span class="pull-right text-muted">
-                                        <em>今天</em>
-                                    </span>
-                            </div>
-                            <div>您有一条预支付申请待审核...</div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a class="text-center" href="audMessageList.html">
+                        <a class="text-center" href="cashMessageList.html">
                             <strong>查看所有消息</strong>
                             <i class="fa fa-angle-right"></i>
                         </a>
@@ -82,7 +69,6 @@
                 </ul>
                 <!-- /.dropdown-messages -->
             </li>
-            <!-- /.dropdown -->
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                     <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
@@ -98,21 +84,30 @@
                 </ul>
                 <!-- /.dropdown-user -->
             </li>
-            <!-- /.dropdown -->
         </ul>
     </nav>
-    <!--左边导航-->
     <nav class="navbar-default navbar-side" role="navigation">
         <div class="sidebar-collapse">
             <ul class="nav" id="main-menu">
                 <li>
-                    <a class="active-menu" href="reviewList.html"><i class="fa fa-desktop"></i> 申请审核</a>
+                    <a href="apply.html"><i class="fa fa-sitemap"></i> 预支付申请<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="apply.html"> 预支付申请</a>
+                        </li>
+                        <li>
+                            <a href="applyList.html"> 申请列表</a>
+                        </li>
+                    </ul>
                 </li>
-                <!--<li>-->
-                <!--<a href="audAnalysisList.html"><i class="fa fa-bar-chart-o"></i> 经济分类执行分析</a>-->
-                <!--</li>-->
                 <li>
-                    <a href="audLogList.html"><i class="fa fa-qrcode"></i> 审核日志</a>
+                    <a href="importBudget.html"><i class="fa fa-bar-chart-o"></i> 经济科目预算导入</a>
+                </li>
+                <li>
+                    <a href="importContact.html"><i class="fa fa-bar-chart-o"></i> 经济科目关系导入</a>
+                </li>
+                <li class="active-menu">
+                    <a href="cashLogList.html"><i class="fa fa-qrcode"></i> 系统日志</a>
                 </li>
             </ul>
 
@@ -123,7 +118,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="page-header">
-                        预支付申请表
+                        日志详情
+                        <small></small>
                     </h1>
                 </div>
             </div>
@@ -132,13 +128,59 @@
                 <div class="col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            申请详情
-                            <!--<small style="color: #58ff59">已通过</small>-->
-                            <small style="color: #d56c18">审核中...</small>
-                            <!--<small style="color: #ff7a17">稽核员审核中...</small>-->
+                            日志详情
                         </div>
                         <div class="panel-body">
                             <div class="panel-group" id="accordion">
+                                <table class="table table-striped table-bordered table-hover"
+                                       style="text-align: center;">
+                                    <div style="margin: 0 0 20px 0;font-size: 15px;font-weight: bold">
+                                        <span style="margin: 0 30px 0 0">申请单号：20180500001</span>
+                                        <span style="margin: 0 30px 0 0">申请单位：×××××××××××</span>
+                                        <span style="margin: 0 30px 0 0">申请人：Larry</span>
+                                        <span style="margin: 0 30px 0 0">申请日期：2018-05-22</span>
+                                    </div>
+                                    <thead>
+                                    <tr>
+                                        <th style="text-align: center;">审核会计</th>
+                                        <th style="text-align: center;">会计审核日期</th>
+                                        <th style="text-align: center;">会计审核结果</th>
+                                        <th style="text-align: center;">审核稽核员</th>
+                                        <th style="text-align: center;">稽核员审核日期</th>
+                                        <th style="text-align: center;">稽核员审核结果</th>
+                                        <th style="text-align: center;">审核结果</th>
+                                        <th style="text-align: center;">支付凭证</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Solaka</td>
+                                        <td>2018-05-23</td>
+                                        <td style="color:#d56c18;font-weight: bold">已提交稽核员</td>
+                                        <td>Ricard</td>
+                                        <td>2018-05-24</td>
+                                        <td style="color: #f00">发票与金额不符</td>
+                                        <td style="color: #f00;font-weight: bold">驳回</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">摘要</td>
+                                        <td colspan="6">××××××××××××× ×××××××××××× ××××××××××××</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">会计审核意见</td>
+                                        <td colspan="6">××××××××××××× ×××××××××××× ××××××××××××</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">稽核员审核意见</td>
+                                        <td colspan="6">××××××××××××× ×××××××××××× ××××××××××××</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="8" style="text-align: right">复核员：Amy&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <label style="margin: 20px 0 15px 0">预支付申请单详情</label>
                                 <table class="table table-striped table-bordered table-hover"
                                        style="text-align: center;">
                                     <thead>
@@ -183,9 +225,9 @@
                                         <td>缴纳单位承担养老金</td>
                                         <td>10000.00</td>
                                         <td>现金</td>
-                                        <td style="color:#d56c18;font-weight: bold">已提交稽核员</td>
+                                        <td style="color: #4cae4c;font-weight: bold">通过</td>
                                         <td>-</td>
-                                        <td style="color: #d56c18;font-weight: bold">审核中...</td>
+                                        <td>-</td>
                                         <td>-</td>
                                     </tr>
                                     <tr>
@@ -194,57 +236,66 @@
                                         <td>缴纳单位承担养老金</td>
                                         <td>10000.00</td>
                                         <td>现金</td>
+                                        <td style="color:#d56c18;font-weight: bold">已提交稽核员</td>
+                                        <td>-</td>
+                                        <td style="color: #f00;font-weight: bold">驳回 </td>
+                                        <td style="color: #f00">发票与金额不符</td>
+                                    </tr>
+                                    <tr>
+                                        <td>共计：</td>
+                                        <td colspan="3">40000.00</td>
+                                        <td>现金</td>
                                         <td style="color: #4cae4c;font-weight: bold">通过</td>
                                         <td>-</td>
                                         <td>-</td>
                                         <td>-</td>
                                     </tr>
                                     <tr>
-                                        <td>共计：</td>
-                                        <td colspan="3">40000.00</td>
-                                        <td>现金</td>
-                                        <td colspan="2" style="color: #d56c18;font-weight: bold">审核中...</td>
-                                        <td colspan="2">-</td>
-                                    </tr>
-                                    <tr>
                                         <td>附件：</td>
-                                        <td colspan="5">×××××.doc&nbsp&nbsp××××.xlsx
+                                        <td colspan="3">×××××.doc&nbsp&nbsp××××.xlsx
                                             <button class="btn btn-primary btn-sm">查看附件</button>
                                         </td>
-                                        <td>附件数量</td>
-                                        <td colspan="2">2</td>
+                                        <td colspan="2">附件数量</td>
+                                        <td colspan="3">2</td>
                                     </tr>
                                     <tr>
                                         <td>说明：</td>
                                         <td rowspan="2" colspan="8" style="word-wrap:break-word;word-break:break-all">
                                             ××××××××××××××××××
                                             ××××××××××××××××××××××××××××
-                                            ××××××××××××××××××××××××××
+                                            ×××××××××××
                                         </td>
                                     </tr>
                                     </tbody>
                                 </table>
                             </div>
-                            <label>审核意见</label>
-                            <p class="form-control">××××××××××××××××××××××××××</p>
                             <div style="text-align: center">
-                                <a href="reviewList.html" class="btn btn-default" style="margin: 20px 15px 20px 0">返回</a>
-                                <a href="#" class="btn btn-success" style="margin: 20px 15px 20px 0">导出</a>
-                                <a href="#" class="btn btn-danger" style="margin: 20px 15px 20px 0">保存</a>
+                                <a href="applyList.html" class="btn btn-default" style="margin: 20px 15px 20px 0">返回</a>
+                                <a href="#" class="btn btn-primary" style="margin: 20px 15px 20px 0">打印</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /. PAGE INNER  -->
+        <center><footer><p>Copyright &copy; 2018.SeaSkySh</p></footer></center>
     </div>
 </div>
 
 <script src="../assets/js/jquery-1.10.2.js"></script>
 <script src="../assets/js/bootstrap.min.js"></script>
 <script src="../assets/js/jquery.metisMenu.js"></script>
+<script src="../assets/js/morris/raphael-2.1.0.min.js"></script>
+<script src="../assets/js/morris/morris.js"></script>
+<script src="../assets/js/dataTables/jquery.dataTables.js"></script>
+<script src="../assets/js/dataTables/dataTables.bootstrap.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#dataTables-example').dataTable();
+    });
+</script>
 <script src="../assets/js/custom-scripts.js"></script>
 
 </body>
+
 </html>
