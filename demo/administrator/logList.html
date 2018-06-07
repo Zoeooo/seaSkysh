@@ -33,13 +33,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="admini.html">海天信息</a>
-            <div style="width: 200px;margin: 0 0 0 260px;padding: 30px 0 0 0">
-                <small style="color:#fff;">欢迎您，John(管理员)！</small>
-            </div>
-        </div>
+            <a class="navbar-brand" href="../administrator/admini.html">海天信息<span style="font-size: 14px">-管理员系统</span></a>
 
+        </div>
         <ul class="nav navbar-top-links navbar-right">
+            <div style="width:150px;margin: 0;padding: 30px 0 0 0;float: left">
+                <small style="color:#fff;">欢迎您，John！[管理员]</small>
+            </div>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                     <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
@@ -105,7 +105,42 @@
                             日志列表
                         </div>
                         <div class="panel-body">
-                            <table border="1" style="font-size: 13px;text-align: center;border: #bbb 1px solid;margin: 0 auto 20px">
+                            <div class="col-md-12" style="margin: 0 auto 20px;">
+                                <div class="form-group">
+                                    <h5>选择显示列:</h5>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox">申请单位
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox">申请人
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox">申请时间
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox">会计
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox">会计审核结果
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox">稽核员
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox">稽核员审核结果
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox">状态
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox">复核员
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox">凭条
+                                    </label>
+                                </div>
+                            </div>
+                            <table class="col-md-12" border="1" style="font-size: 13px;text-align: center;border: #bbb 1px solid;margin: 0 auto 20px">
                                 <thead>
                                 <tr style="height: 40px">
                                     <td style="padding: 0 5px 0 5px">申请单号</td>
@@ -120,12 +155,11 @@
                                     <td>状态</td>
                                     <td>复核员</td>
                                     <td>凭条</td>
-                                    <td>查看详情</td>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr style="height: 40px">
-                                    <td style="padding: 0 5px 0 5px">20180500001</td>
+                                    <td style="padding: 0 5px 0 5px"><a href="log.html">20180500001</a></td>
                                     <td style="padding: 0 5px 0 5px">××××××××××</td>
                                     <td style="padding: 0 5px 0 5px">××××××××××</td>
                                     <td style="padding: 0 5px 0 5px">Larry</td>
@@ -137,7 +171,6 @@
                                     <td style="padding: 0 5px 0 5px">已通过</td>
                                     <td style="padding: 0 5px 0 5px">Amy</td>
                                     <td style="padding: 0 5px 0 5px">已打印</td>
-                                    <td style="padding: 0 5px 0 5px"><a class="btn btn-xs btn-primary" href="log.html">查看详情</a></td>
                                 </tr>
                                 <tr style="height: 40px">
                                     <td>20180500001</td>
@@ -152,7 +185,7 @@
                                     <td>未通过</td>
                                     <td>Amy</td>
                                     <td>-</td>
-                                    <td><a class="btn btn-xs btn-primary" href="log_2.html">查看详情</a></td>
+                                   
                                 </tr>
                                 <tr style="height: 40px">
                                     <td>20180500001</td>
@@ -167,7 +200,6 @@
                                     <td>已通过</td>
                                     <td>Amy</td>
                                     <td>已打印</td>
-                                    <td><a class="btn btn-xs btn-primary" href="log.html">查看详情</a></td>
                                 </tr>
                                 <tr style="height: 40px">
                                     <td>20180500001</td>
@@ -182,7 +214,6 @@
                                     <td>已通过</td>
                                     <td>Amy</td>
                                     <td>未打印</td>
-                                    <td><a class="btn btn-xs btn-primary" href="">查看详情</a></td>
                                 </tr>
                                 <tr style="height: 40px">
                                     <td>20180500001</td>
@@ -197,7 +228,6 @@
                                     <td>驳回</td>
                                     <td>Amy</td>
                                     <td>-</td>
-                                    <td><a class="btn btn-xs btn-primary" href="">查看详情</a></td>
                                 </tr>
                                 <tr style="height: 40px">
                                     <td>20180500001</td>
@@ -212,7 +242,6 @@
                                     <td>已通过</td>
                                     <td>Amy</td>
                                     <td>已打印</td>
-                                    <td><a class="btn btn-xs btn-primary" href="">查看详情</a></td>
                                 </tr>
                                 <tr style="height: 40px">
                                     <td>20180500001</td>
@@ -227,7 +256,6 @@
                                     <td>已通过</td>
                                     <td>Amy</td>
                                     <td>未打印</td>
-                                    <td><a class="btn btn-xs btn-primary" href="">查看详情</a></td>
                                 </tr>
                                 <tr style="height: 40px">
                                     <td>20180500001</td>
@@ -242,7 +270,6 @@
                                     <td>未通过</td>
                                     <td>Amy</td>
                                     <td>-</td>
-                                    <td><a class="btn btn-xs btn-primary" href="">查看详情</a></td>
                                 </tr>
                                 <tr style="height: 40px">
                                     <td>20180500001</td>
@@ -257,7 +284,6 @@
                                     <td>驳回</td>
                                     <td>Amy</td>
                                     <td>-</td>
-                                    <td><a class="btn btn-xs btn-primary" href="">查看详情</a></td>
                                 </tr>
                                 </tbody>
                             </table>

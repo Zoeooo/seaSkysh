@@ -33,13 +33,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="admini.html">海天信息</a>
-            <div style="width: 200px;margin: 0 0 0 260px;padding: 30px 0 0 0">
-                <small style="color:#fff;">欢迎您，John(管理员)！</small>
-            </div>
+            <a class="navbar-brand" href="../administrator/admini.html">海天信息<span style="font-size: 14px">-管理员系统</span></a>
         </div>
-
         <ul class="nav navbar-top-links navbar-right">
+            <div style="width:150px;margin: 0;padding: 30px 0 0 0;float: left">
+                <small style="color:#fff;">欢迎您，John！[管理员]</small>
+            </div>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                     <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
@@ -82,9 +81,6 @@
                 <li>
                     <a href="indexManage.html"><i class="fa fa-bar-chart-o"></i> 指标管理</a>
                 </li>
-                <!--<li>-->
-                <!--<a href="analysisList.html"><i class="fa fa-bar-chart-o"></i> 经济分类执行分析</a>-->
-                <!--</li>-->
                 <li>
                     <a class="active-menu" href="logList.html"><i class="fa fa-qrcode"></i> 查看日志</a>
                 </li>
@@ -168,10 +164,8 @@
                                         <th>摘要</th>
                                         <th>金额</th>
                                         <th>支付方式</th>
-                                        <th>会计审核结果</th>
-                                        <th>会计审核意见</th>
-                                        <th>稽核员审核操作</th>
-                                        <th>稽核员审核意见</th>
+                                        <th>会计审核</th>
+                                        <th>稽核员审核</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -183,7 +177,15 @@
                                         <td>现金</td>
                                         <td style="color: #4cae4c;font-weight: bold">通过</td>
                                         <td>-</td>
-                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>机关事业单位基本养老保险缴费</td>
+                                        <td>人员支出_机关事业单位基本养老保险缴费</td>
+                                        <td>缴纳单位承担养老金</td>
+                                        <td>10000.00</td>
+                                        <td>现金</td>
+                                        <td style="color: #4cae4c;font-weight: bold">通过</td>
+
                                         <td>-</td>
                                     </tr>
                                     <tr>
@@ -193,19 +195,7 @@
                                         <td>10000.00</td>
                                         <td>现金</td>
                                         <td style="color: #4cae4c;font-weight: bold">通过</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>机关事业单位基本养老保险缴费</td>
-                                        <td>人员支出_机关事业单位基本养老保险缴费</td>
-                                        <td>缴纳单位承担养老金</td>
-                                        <td>10000.00</td>
-                                        <td>现金</td>
-                                        <td style="color: #4cae4c;font-weight: bold">通过</td>
-                                        <td>-</td>
-                                        <td>-</td>
+
                                         <td>-</td>
                                     </tr>
                                     <tr>
@@ -215,8 +205,7 @@
                                         <td>10000.00</td>
                                         <td>现金</td>
                                         <td style="color: #4cae4c;font-weight: bold">通过</td>
-                                        <td>-</td>
-                                        <td>-</td>
+
                                         <td>-</td>
                                     </tr>
                                     <tr>
@@ -225,12 +214,10 @@
                                         <td>现金</td>
                                         <td style="color: #4cae4c;font-weight: bold">通过</td>
                                         <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
                                     </tr>
                                     <tr>
                                         <td>附件：</td>
-                                        <td colspan="5">×××××.doc&nbsp&nbsp××××.xlsx
+                                        <td colspan="4">×××××.doc&nbsp&nbsp××××.xlsx
                                             <button class="btn btn-primary btn-sm">查看附件</button>
                                         </td>
                                         <td>附件数量</td>
@@ -238,10 +225,10 @@
                                     </tr>
                                     <tr>
                                         <td>说明：</td>
-                                        <td rowspan="2" colspan="5" style="word-wrap:break-word;word-break:break-all">
+                                        <td rowspan="2" colspan="6" style="word-wrap:break-word;word-break:break-all">
                                             ××××××××××××××××××
                                             ××××××××××××××××××××××××××××
-                                            ××××××××××××××××××××××××××
+                                            ××××××××××××
                                         </td>
                                     </tr>
                                     </tbody>
@@ -250,8 +237,8 @@
                             <div style="text-align: center">
                                 <a href="applyList.html" class="btn btn-default" style="margin: 20px 15px 20px 0">返回</a>
                                 <a href="#" class="btn btn-primary" style="margin: 20px 15px 20px 0">打印</a>
-                                <a href="#" class="btn btn-danger">删除</a>
-                            </div>
+                                <!--<a href="#" class="btn btn-danger">删除</a>-->
+                        </div>
                         </div>
                     </div>
                 </div>

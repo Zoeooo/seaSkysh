@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>用户管理</title>
-    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
-    <link href="../assets/css/font-awesome.css" rel="stylesheet" />
-    <link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
-    <link href="../assets/css/custom-styles.css" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href="../assets/css/bootstrap.css" rel="stylesheet"/>
+    <link href="../assets/css/font-awesome.css" rel="stylesheet"/>
+    <link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet"/>
+    <link href="../assets/css/custom-styles.css" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
 </head>
 
 <body>
@@ -23,13 +23,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="admini.html">海天信息</a>
-            <div style="width: 200px;margin: 0 0 0 260px;padding: 30px 0 0 0">
-                <small style="color:#fff;">欢迎您，John(管理员)！</small>
-            </div>
+            <a class="navbar-brand" href="../administrator/admini.html">海天信息<span style="font-size: 14px">-管理员系统</span></a>
         </div>
-
         <ul class="nav navbar-top-links navbar-right">
+            <div style="width:150px;margin: 0;padding: 30px 0 0 0;float: left">
+                <small style="color:#fff;">欢迎您，John！[管理员]</small>
+            </div>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                     <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
@@ -52,7 +51,8 @@
         <div class="sidebar-collapse">
             <ul class="nav" id="main-menu">
                 <li>
-                    <a  class="active-menu" href="userManage.html"><i class="fa fa-sitemap"></i> 用户管理<span class="fa arrow"></span></a>
+                    <a class="active-menu" href="userManage.html"><i class="fa fa-sitemap"></i> 用户管理<span
+                            class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
                             <a href="userManage.html">用户管理</a>
@@ -71,9 +71,6 @@
                 <li>
                     <a href="indexManage.html"><i class="fa fa-bar-chart-o"></i> 指标管理</a>
                 </li>
-                <!--<li>-->
-                    <!--<a href="analysisList.html"><i class="fa fa-bar-chart-o"></i> 经济分类执行分析</a>-->
-                <!--</li>-->
                 <li>
                     <a href="logList.html"><i class="fa fa-qrcode"></i> 查看日志</a>
                 </li>
@@ -119,7 +116,8 @@
                                             <label>邮箱地址</span></label>
                                             <div class="form-group input-group">
                                                 <span class="input-group-addon">@</span>
-                                                <input type="text" class="form-control" placeholder="邮箱地址" value="×××××××@×××.××">
+                                                <input type="text" class="form-control" placeholder="邮箱地址"
+                                                       value="×××××××@×××.××">
                                             </div>
                                             <label>用户说明<span style="color:#f00">&nbsp*</span></label>
                                             <textarea class="form-control" rows="3">××××××××××××××××××××××××××××××××××××
@@ -148,7 +146,7 @@
                                             <input type="checkbox">稽核员
                                         </label>
                                         <label class="checkbox-inline">
-                                            <input id="ZDY"  onclick="allcheck()" type="checkbox">自定义
+                                            <input id="ZDY" onclick="allcheck()" type="checkbox">自定义
                                         </label>
                                         <div id="custo">
                                             <label>自定义角色：<span style="color:#f00">&nbsp*</span></label>
@@ -165,7 +163,8 @@
                                             <label>权限列表</label>
                                             <div class="checkbox">
                                                 <label>
-                                                    <input type="checkbox" onclick="checkBox1()" value=""><span>权限 1</span>
+                                                    <input type="checkbox" onclick="checkBox1()"
+                                                           value=""><span>权限 1</span>
                                                 </label>
                                                 <div id="checkBox1">
                                                     <div class="checkbox">
@@ -187,7 +186,8 @@
                                             </div>
                                             <div class="checkbox">
                                                 <label>
-                                                    <input type="checkbox" onclick="checkBox2()" value=""><span>权限 2</span>
+                                                    <input type="checkbox" onclick="checkBox2()"
+                                                           value=""><span>权限 2</span>
                                                 </label>
                                                 <div id="checkBox2">
                                                     <div class="checkbox">
@@ -209,7 +209,8 @@
                                             </div>
                                             <div class="checkbox">
                                                 <label>
-                                                    <input type="checkbox" onclick="checkBox3()" value=""><span>权限 3</span>
+                                                    <input type="checkbox" onclick="checkBox3()"
+                                                           value=""><span>权限 3</span>
                                                 </label>
                                                 <div id="checkBox3">
                                                     <div class="checkbox">
@@ -248,18 +249,23 @@
                                 </div>
 
                             </div>
-                            <center><div class="col-md-12" style="display: inline-block">
-                                <a href="userManage.html" class="btn btn-primary" style="margin: 20px 15px 20px 0">确定</a>
-                                <a href="#" type="reset" class="btn btn-danger" style="margin: 20px 15px 20px 0">清空</a>
-                                <a href="userManage.html" class="btn btn-default" style="margin: 20px 15px 20px 0">返回</a>
-                            </div></center>
+                            <center>
+                                <div class="col-md-12" style="display: inline-block">
+                                    <a href="userManage.html" class="btn btn-primary" style="margin: 20px 15px 20px 0">确定</a>
+                                    <a href="#" type="reset" class="btn btn-danger"
+                                       style="margin: 20px 15px 20px 0">清空</a>
+                                    <a href="userManage.html" class="btn btn-default" style="margin: 20px 15px 20px 0">返回</a>
+                                </div>
+                            </center>
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
-        <center><footer><p>Copyright &copy; 2018.SeaSkySh</p></footer></center>
+        <center>
+            <footer><p>Copyright &copy; 2018.SeaSkySh</p></footer>
+        </center>
     </div>
 </div>
 
@@ -279,159 +285,174 @@
 <script>
     var checkAll = false;
     $("#custo").hide("500");
-    function allcheck(){
+
+    function allcheck() {
         checkAll = !checkAll;
-        if(checkAll==true){
+        if (checkAll == true) {
             $("#custo").show("400");
         }
-        else{
+        else {
             $("#custo").hide("500");
         }
         let inputs = document.getElementsByName('checkbox')
-        for(var i =0;i<inputs.length;i++){inputs[i].checked = checkAll}
+        for (var i = 0; i < inputs.length; i++) {
+            inputs[i].checked = checkAll
+        }
     }
 </script>
 <script>
     var check1 = false;
     $("#checkBox1").hide("500");
-    function checkBox1(){
+
+    function checkBox1() {
         check1 = !check1;
-        if(check1==true){
+        if (check1 == true) {
             $("#checkBox1").show("400");
         }
-        else{
+        else {
             $("#checkBox1").hide("500");
         }
     }
 
     var check2 = false;
     $("#checkBox2").hide("500");
-    function checkBox2(){
+
+    function checkBox2() {
         check2 = !check2;
-        if(check2==true){
+        if (check2 == true) {
             $("#checkBox2").show("400");
         }
-        else{
+        else {
             $("#checkBox2").hide("500");
         }
     }
 
     var check3 = false;
     $("#checkBox3").hide("500");
-    function checkBox3(){
+
+    function checkBox3() {
         check3 = !check3;
-        if(check3==true){
+        if (check3 == true) {
             $("#checkBox3").show("400");
         }
-        else{
+        else {
             $("#checkBox3").hide("500");
         }
     }
 
     var qx_1 = false;
     $("#qx_1").show("500");
-    function qx1(){
+
+    function qx1() {
         qx_1 = !qx_1;
-        if(qx_1==true){
+        if (qx_1 == true) {
             $("#qx_1").show("400");
         }
-        else{
+        else {
             $("#qx_1").hide("500");
         }
     }
 
     var qx_2 = false;
     $("#qx_2").hide("500");
-    function qx2(){
+
+    function qx2() {
         qx_2 = !qx_2;
-        if(qx_2==true){
+        if (qx_2 == true) {
             $("#qx_2").show("400");
         }
-        else{
+        else {
             $("#qx_2").hide("500");
         }
     }
 
     var qx_3 = false;
     $("#qx_3").show("500");
-    function qx3(){
+
+    function qx3() {
         qx_3 = !qx_3;
-        if(qx_3==true){
+        if (qx_3 == true) {
             $("#qx_3").show("400");
         }
-        else{
+        else {
             $("#qx_3").hide("500");
         }
     }
 
     var qx_4 = false;
     $("#qx_4").hide("500");
-    function qx4(){
+
+    function qx4() {
         qx_4 = !qx_4;
-        if(qx_4==true){
+        if (qx_4 == true) {
             $("#qx_4").show("400");
         }
-        else{
+        else {
             $("#qx_4").hide("500");
         }
     }
 
     var qx_5 = false;
     $("#qx_5").hide("500");
-    function qx5(){
+
+    function qx5() {
         qx_5 = !qx_5;
-        if(qx_5==true){
+        if (qx_5 == true) {
             $("#qx_5").show("400");
         }
-        else{
+        else {
             $("#qx_5").hide("500");
         }
     }
 
     var qx_6 = false;
     $("#qx_6").show("500");
-    function qx6(){
+
+    function qx6() {
         qx_6 = !qx_6;
-        if(qx_6==true){
+        if (qx_6 == true) {
             $("#qx_6").show("400");
         }
-        else{
+        else {
             $("#qx_6").hide("500");
         }
     }
 
     var qx_7 = false;
     $("#qx_7").hide("500");
-    function qx7(){
+
+    function qx7() {
         qx_7 = !qx_7;
-        if(qx_7==true){
+        if (qx_7 == true) {
             $("#qx_7").show("400");
         }
-        else{
+        else {
             $("#qx_7").hide("500");
         }
     }
 
     var qx_8 = false;
     $("#qx_8").hide("500");
-    function qx8(){
+
+    function qx8() {
         qx_8 = !qx_8;
-        if(qx_8==true){
+        if (qx_8 == true) {
             $("#qx_8").show("400");
         }
-        else{
+        else {
             $("#qx_8").hide("500");
         }
     }
 
     var qx_9 = false;
     $("#qx_9").show("500");
-    function qx9(){
+
+    function qx9() {
         qx_9 = !qx_9;
-        if(qx_9==true){
+        if (qx_9 == true) {
             $("#qx_9").show("400");
         }
-        else{
+        else {
             $("#qx_9").hide("500");
         }
     }

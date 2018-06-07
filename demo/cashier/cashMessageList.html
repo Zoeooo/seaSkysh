@@ -23,13 +23,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="cashier.html">海天信息</a>
-            <div style="width: 200px;margin: 0 0 0 260px;padding: 30px 0 0 0">
-                <small style="color:#fff;">欢迎您，Larry(出纳)！</small>
-                <!--欢迎您，{{name}}}+"("+{{ident}}+")"+"！"-->
-            </div>
+            <a class="navbar-brand" href="cashier.html">海天信息<span style="font-size: 14px">-预支付申请系统</span></a>
         </div>
         <ul class="nav navbar-top-links navbar-right">
+            <div style="width: 150px;margin: 0;padding: 30px 0 0 0;color:#fff;float: left;">
+                <small style="color:#fff;">欢迎您，Larry[出纳]！</small>
+                <!--欢迎您，{{name}}}+"("+{{ident}}+")"+"！"-->
+            </div>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                     <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
@@ -130,67 +130,36 @@
                             消息列表
                         </div>
                         <div class="panel-body">
-                            <div class="panel-group" id="accordion">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">消息 #1</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
-                                        <div class="panel-body">
-                                            test这是一条消息， test这是一条消息， test这是一条消息， test这是一条消息， test这是一条消息...   <a href="cashMessage.html" class="btn btn-default">查看详情</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">消息 #2</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse in" style="height: auto;">
-                                        <div class="panel-body">
-                                            test这是一条消息， test这是一条消息， test这是一条消息， test这是一条消息， test这是一条消息...   <a href="cashMessage.html" class="btn btn-default">查看详情</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">消息 #3</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseThree" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            test这是一条消息， test这是一条消息， test这是一条消息， test这是一条消息， test这是一条消息...   <a href="cashMessage.html" class="btn btn-default">查看详情</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="collapsed">消息 #4</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseFour" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            test这是一条消息， test这是一条消息， test这是一条消息， test这是一条消息， test这是一条消息...   <a href="cashMessage.html" class="btn btn-default">查看详情</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" class="collapsed">消息 #5</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseFive" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            test这是一条消息， test这是一条消息， test这是一条消息， test这是一条消息， test这是一条消息...   <a href="cashMessage.html" class="btn btn-default">查看详情</a>
-                                        </div>
-                                    </div>
-                                </div>
+
+                            <div class="panel panel-default">
+                                <lable>[2018-05-22]</lable>
+                                您有一条预支付审核通知。<a href="cashSuccessForm.html" class="btn btn-primary btn-xs"
+                                             style="margin: 20px 15px 20px 0">查看详情</a>
+                            </div>
+                            <div class="panel panel-default">
+                                <lable>[2018-05-22]</lable>
+                                您有一条预支付审核通知。<a href="cashRejectForm.html" class="btn btn-primary btn-xs"
+                                             style="margin: 20px 15px 20px 0">查看详情</a>
+                            </div>
+                            <div class="panel panel-default">
+                                <lable>[2018-05-22]</lable>
+                                您有一条预支付审核通知。<a href="cashSuccessForm.html" class="btn btn-primary btn-xs"
+                                             style="margin: 20px 15px 20px 0">查看详情</a>
+                            </div>
+                            <div class="panel panel-default">
+                                <lable>[2018-05-22]</lable>
+                                您有一条预支付审核通知。<a href="cashWaitForm.html" class="btn btn-primary btn-xs"
+                                             style="margin: 20px 15px 20px 0">查看详情</a>
+                            </div>
+                            <div class="panel panel-default">
+                                <lable>[2018-05-22]</lable>
+                                您有一条预支付审核通知。<a href="cashSuccessForm.html" class="btn btn-primary btn-xs"
+                                             style="margin: 20px 15px 20px 0">查看详情</a>
+                            </div>
+                            <div class="panel panel-default">
+                                <lable>[2018-05-22]</lable>
+                                您有一条预支付审核通知。<a href="cashSuccessForm.html" class="btn btn-primary btn-xs"
+                                             style="margin: 20px 15px 20px 0">查看详情</a>
                             </div>
                         </div>
                     </div>
